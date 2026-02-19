@@ -6,7 +6,8 @@ export const homeContent = {
     subtitle: "Seamless Apparel Network",
     buttonText: "Explore",
     buttonHref: "/our-story",
-    video: "/hero.mp4",
+    video:
+      "https://www.youtube.com/embed/EL4DMSpAYMA?autoplay=1&mute=1&loop=1&playlist=EL4DMSpAYMA&controls=0&showinfo=0&modestbranding=1",
   },
   introduction: {
     pretitle: "Global Reach, Local Expertise",
@@ -34,7 +35,7 @@ export const homeContent = {
     description:
       "To revolutionize global apparel sourcing through smarter strategies and ethical partnerships — where integrity drives every decision, quality defines every product, and transparency shapes every relationship. We are committed to building a supply chain that not only delivers, but inspires trust and sets new standards for responsibility in fashion.",
     buttonText: "Contact Us",
-    buttonHref: "/contact",
+    buttonHref: "/get-in-touch",
     image: "/home2.jpg",
   },
   deliveryProcess: {
@@ -209,6 +210,16 @@ export const partnerWithUsContent = {
   },
 };
 
+
+export const getInTouchContent = {
+  hero: {
+    title: "Get In Touch",
+    subtitle:
+      "Let’s Build Something That Lasts",
+  },
+
+  
+};
 export const behindGenContent = {
   hero: {
     title: "Behind Gen",
@@ -229,7 +240,7 @@ To protect intellectual property, all partners operate under strict NDAs. Any mi
 
 With confidentiality, precision, and market alignment at the forefront, we provide a secure and seamless journey from concept to finished product.
     `,
-    image: "/b1.jpg",
+    image: "/b1.jpeg",
   },
 
   sectionTwo: {
@@ -243,7 +254,7 @@ Our experience extends beyond manufacturing — encompassing global trade, fashi
 
 This diverse foundation enables us to support clients not only in sourcing, but also in product development, market positioning, cost optimisation, and long-term supply chain resilience.
     `,
-    image: "/b2.jpg",
+    image: "/b2.webp",
   },
 
   sectionThree: {
@@ -518,7 +529,7 @@ export const aboutContent = {
       },
     ],
     buttonText: "Contact Us",
-    buttonHref: "/contact",
+    buttonHref: "/get-in-touch",
     image: "/about1.jpg",
   },
   teamFeatures: {

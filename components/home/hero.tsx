@@ -4,70 +4,61 @@ import Link from "next/link";
 import { homeContent } from "@/utils/content";
 import { ArrowUpRight } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 
 export function Hero() {
-  const { title, subtitle, buttonText, buttonHref, video } = homeContent.hero;
-  const sectionRef = useRef(null);
-  
-  // Lazy Load State
-  const [isMounted, setIsMounted] = useState(false);
+  const { title, subtitle, buttonText, buttonHref, video } =
+    homeContent.hero;
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+  const sectionRef = useRef<HTMLDivElement | null>(null);
+  const [videoLoaded, setVideoLoaded] = useState(false);
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start start", "end start"],
   });
 
-  // Parallax effect for video
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-  
-  // Content fades out faster
   const contentOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
   const contentY = useTransform(scrollYProgress, [0, 0.5], [0, -100]);
 
   return (
     <section
       ref={sectionRef}
-      className="relative w-full min-h-[115vh] flex items-center justify-center overflow-hidden bg-black"
+      // min-h-screen so it fills the full viewport from top: 0
+      // Content is padded inside to clear the fixed header (pt-20 mobile, pt-48 desktop)
+      className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-black"
     >
-      {/* Background Layer: Video */}
+      {/* Background Video Layer */}
       <motion.div
         style={{ y: backgroundY }}
         className="absolute inset-0 z-0 h-[120%] w-full top-[-10%]"
       >
-        <div className="relative w-full h-full">
-            {/* Lazy Load Implementation: 
-              We only render the video tag after the component has mounted on the client.
-              brightness-[0.4] darkens the video so text pops.
-            */}
-            {isMounted && (
-              <video
-                className="absolute inset-0 w-full h-full object-cover brightness-[0.4]"
-                autoPlay
-                loop
-                muted
-                playsInline
-              >
-                <source src={video} type="video/mp4" />
-                {/* Fallback for browsers that don't support video */}
-                <div className="absolute inset-0 bg-neutral-900" />
-              </video>
-            )}
-            
-            {/* Gradient Overlay for better text readability */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/80" />
+        <div className="relative w-full h-full bg-black overflow-hidden">
+          <iframe
+            className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none transition-opacity duration-1000 ${
+              videoLoaded ? "opacity-100" : "opacity-0"
+            }`}
+            style={{
+              width: "max(100%, calc(100vh * 16 / 9))",
+              height: "max(100%, calc(100vw * 9 / 16))",
+            }}
+            src={video}
+            title="Hero Background Video"
+            allow="autoplay; fullscreen"
+            onLoad={() => setVideoLoaded(true)}
+          />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
       </motion.div>
 
       {/* Content Layer */}
       <motion.div
         style={{ opacity: contentOpacity, y: contentY }}
-        className="container relative z-10 text-center max-w-5xl px-4"
+        // pt-20 on mobile clears the fixed nav (h-20)
+        // pt-48 on desktop clears top bar (h-28) + nav (h-20)
+        className="container relative z-10 text-center max-w-5xl px-4 pt-20 md:pt-48"
       >
         <div className="space-y-8">
           <motion.span
@@ -103,9 +94,7 @@ export function Hero() {
             className="flex flex-col sm:flex-row items-center justify-center gap-5 pt-4"
           >
             <Link href={buttonHref}>
-              <Button
-                size="xl"
-              >
+              <Button size="xl">
                 {buttonText}
                 <span className="ml-4 h-8 w-8 bg-black/10 rounded-full flex items-center justify-center">
                   <ArrowUpRight size={18} />
@@ -115,17 +104,6 @@ export function Hero() {
           </motion.div>
         </div>
       </motion.div>
-
-      {/* Curved Bottom Edge */}
-      <div className="absolute bottom-[-1px] left-0 w-full overflow-hidden leading-[0] z-20">
-        <svg
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-          className="relative block w-full h-[60px] md:h-[100px] fill-background"
-        >
-          <path d="M0,0 C300,130 900,130 1200,0 L1200,120 L0,120 Z" />
-        </svg>
-      </div>
     </section>
   );
 }

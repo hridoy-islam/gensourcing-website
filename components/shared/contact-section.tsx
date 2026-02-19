@@ -120,157 +120,186 @@ export function ContactSection() {
     return () => ctx.revert();
   }, []);
 
-  return (
-    <section ref={sectionRef} className="relative py-24 lg:py-32 overflow-hidden">
-      <div className="container relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-          
-          {/* --- LEFT SIDE: INFO --- */}
-          <div ref={infoRef} className="space-y-10 lg:pt-4">
-            <div className="space-y-6">
-              <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-sm font-medium text-primary">
-                <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse"></span>
-                Contact Us
+ return (
+  <section
+    ref={sectionRef}
+    className="relative py-28 lg:py-36 bg-gradient-to-b from-white to-slate-50 overflow-hidden"
+  >
+    <div className="container relative z-10">
+      <div className="grid lg:grid-cols-2 gap-20 lg:gap-28 items-start">
+
+        {/* ---------- LEFT SIDE ---------- */}
+        <div ref={infoRef} className="space-y-12 lg:pt-10">
+          <div className="space-y-6">
+            <span className="text-sm uppercase tracking-[4px] font-semibold text-primary">
+              Contact
+            </span>
+
+            <h2 className="font-extrabold text-4xl md:text-5xl lg:text-6xl tracking-tight text-slate-900 leading-[1.1]">
+              {info.title}
+            </h2>
+
+            <p className="text-lg text-slate-600 leading-relaxed max-w-lg">
+              {info.description}
+            </p>
+          </div>
+
+          <div className="space-y-8 pt-6">
+            <ContactItem
+              icon={MapPin}
+              title={info.addressTitle}
+              content={info.address}
+            />
+
+            <ContactItem
+              icon={Mail}
+              title="Email"
+              content={info.email}
+              href={`mailto:${info.email}`}
+            />
+          </div>
+        </div>
+
+        {/* ---------- RIGHT SIDE ---------- */}
+        <div
+          ref={formRef}
+          className="relative bg-white/80 backdrop-blur-xl p-10 md:p-14 rounded-[2rem] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.12)] border border-white/40"
+        >
+          {/* Success Overlay */}
+          {isSubmitted && (
+            <div className="absolute inset-0 z-10 bg-white/95 backdrop-blur-md rounded-[2rem] flex flex-col items-center justify-center text-center p-8 animate-in fade-in duration-300">
+              <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-5">
+                <CheckCircle2 size={30} />
               </div>
-              <h2 className="font-extrabold text-4xl md:text-5xl lg:text-6xl tracking-tight text-slate-900 leading-[1.1]">
-                {info.title}
-              </h2>
-              <p className="font-medium text-lg leading-relaxed max-w-md">
-                {info.description}
+              <h3 className="text-2xl font-bold text-slate-900">
+                Message Sent Successfully
+              </h3>
+              <p className="text-slate-500 mt-2">
+                Our team will contact you shortly.
               </p>
             </div>
+          )}
 
-            {/* Contact Details List */}
-            <div className="space-y-8 pt-4">
-              <ContactItem 
-                icon={MapPin} 
-                title={info.addressTitle} 
-                content={info.address} 
-              />
-          
-              <ContactItem 
-                icon={Mail} 
-                title="Email" 
-                content={info.email} 
-                href={`mailto:${info.email}`}
-              />
-            </div>
+          <div className="mb-10">
+            <h3 className="font-bold text-2xl text-slate-900 mb-3">
+              {formTitle}
+            </h3>
+            <p className="text-slate-500 text-sm">
+              Fill out the form and we’ll respond within 24 hours.
+            </p>
           </div>
 
-          {/* --- RIGHT SIDE: FORM --- */}
-          <div 
-            ref={formRef}
-            className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-[0_20px_60px_-15px_rgba(0,0,0,0.08)] border border-slate-100 relative group"
-          >
-            {/* Success Overlay */}
-            {isSubmitted && (
-               <div className="absolute inset-0 z-10 bg-white/90 backdrop-blur-sm rounded-[2.5rem] flex flex-col items-center justify-center text-center p-8 animate-in fade-in duration-300">
-                  <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-4">
-                    <CheckCircle2 size={32} />
-                  </div>
-                  <h3 className="text-2xl font-bold text-slate-900">Message Sent!</h3>
-                  <p className="text-slate-500 mt-2">We will get back to you shortly.</p>
-               </div>
-            )}
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
 
-            <div className="mb-8">
-               <h3 className="font-bold text-2xl text-slate-900 mb-2">{formTitle}</h3>
-               <p className="text-slate-500 text-sm">Fill out the form below and we'll get back to you.</p>
+            <div className="grid sm:grid-cols-2 gap-6">
+              <FormInput
+                register={register("name")}
+                placeholder={form.placeholders.name}
+                error={errors.name?.message}
+              />
+              <FormInput
+                register={register("email")}
+                placeholder={form.placeholders.email}
+                error={errors.email?.message}
+              />
             </div>
 
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
-              
-              <div className="grid sm:grid-cols-2 gap-5">
-                <div className="space-y-2">
-                  <Input 
-                    {...register("name")} 
-                    placeholder={form.placeholders.name} 
-                    className="h-12 bg-slate-50 border-slate-100 focus:bg-white ring-0 transition-all rounded-xl"
-                  />
-                  {errors.name && <p className="text-red-500 text-xs pl-1">{errors.name.message}</p>}
-                </div>
-                <div className="space-y-2">
-                  <Input 
-                    {...register("email")} 
-                    placeholder={form.placeholders.email} 
-                    className="h-12 bg-slate-50 border-slate-100 focus:bg-white  transition-all rounded-xl"
-                  />
-                  {errors.email && <p className="text-red-500 text-xs pl-1">{errors.email.message}</p>}
-                </div>
-              </div>
+            <FormInput
+              register={register("phone")}
+              placeholder={form.placeholders.phone}
+              error={errors.phone?.message}
+            />
 
-              <div className="space-y-2">
-                <Input 
-                  {...register("phone")} 
-                  placeholder={form.placeholders.phone} 
-                  className="h-12 bg-slate-50 border-slate-100 focus:bg-white  transition-all rounded-xl"
-                />
-                {errors.phone && <p className="text-red-500 text-xs pl-1">{errors.phone.message}</p>}
-              </div>
-
-              {/* SHADCN SELECT INTEGRATION */}
-              <div className="space-y-2">
-                <Controller
-                  control={control}
-                  name="service"
-                  render={({ field }) => (
-                    <Select onValueChange={field.onChange} value={field.value || ""}>
-                      <SelectTrigger 
-                        className={cn(
-                          "h-12 bg-slate-50 border-slate-100 focus:bg-white focus:ring-2 focus:ring-primary/20  transition-all rounded-xl text-slate-600",
-                          !field.value && "text-muted-foreground"
-                        )}
-                      >
-                        <SelectValue placeholder="Select a service..." />
-                      </SelectTrigger>
-                      <SelectContent className="rounded-xl">
-                        {form.services.map((s) => (
-                          <SelectItem key={s} value={s} className="cursor-pointer">
-                            {s}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
-                  )}
-                />
-                {errors.service && <p className="text-red-500 text-xs pl-1">{errors.service.message}</p>}
-              </div>
-
-              <div className="space-y-2">
-                <Textarea 
-                  {...register("message")} 
-                  placeholder={form.placeholders.message} 
-                  className="bg-slate-50 border-slate-100 focus:bg-white  transition-all rounded-xl min-h-[140px] resize-none p-4"
-                />
-                {errors.message && <p className="text-red-500 text-xs pl-1">{errors.message.message}</p>}
-              </div>
-
-              <Button 
-                type="submit" 
-                disabled={isSubmitting}
-                size="lg"
-                className="w-full h-14 font-semibold group bg-primary text-white hover:bg-primary/90"
-              >
-                {isSubmitting ? (
-                  <span className="flex items-center gap-2">
-                    <span className="h-4 w-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                    Sending...
-                  </span>
-                ) : (
-                  <span className="flex items-center gap-2">
-                    {form.buttonText || "Send Message"} 
-                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                  </span>
+            {/* Select */}
+            <div className="space-y-2">
+              <Controller
+                control={control}
+                name="service"
+                render={({ field }) => (
+                  <Select
+                    onValueChange={field.onChange}
+                    value={field.value || ""}
+                  >
+                    <SelectTrigger className="h-12 rounded-xl bg-slate-100 border-none focus:ring-2 focus:ring-primary/30">
+                      <SelectValue placeholder="Select a service..." />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {form.services.map((s) => (
+                        <SelectItem key={s} value={s}>
+                          {s}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
                 )}
-              </Button>
-            </form>
-          </div>
+              />
+              {errors.service && (
+                <p className="text-red-500 text-xs">
+                  {errors.service.message}
+                </p>
+              )}
+            </div>
 
+            <div className="space-y-2">
+              <Textarea
+                {...register("message")}
+                placeholder={form.placeholders.message}
+                className="rounded-xl bg-slate-100 border-none focus:ring-2 focus:ring-primary/30 min-h-[140px]"
+              />
+              {errors.message && (
+                <p className="text-red-500 text-xs">
+                  {errors.message.message}
+                </p>
+              )}
+            </div>
+
+            <Button
+              type="submit"
+              disabled={isSubmitting}
+              className="w-full h-14 rounded-xl bg-primary text-white font-semibold hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              {isSubmitting ? (
+                <span className="flex items-center gap-2">
+                  <span className="h-4 w-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                  Sending...
+                </span>
+              ) : (
+                <span className="flex items-center gap-2">
+                  {form.buttonText || "Send Message"}
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              )}
+            </Button>
+          </form>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+);
+
+}
+
+function FormInput({
+  register,
+  placeholder,
+  error,
+}: {
+  register: any;
+  placeholder: string;
+  error?: string;
+}) {
+  return (
+    <div className="space-y-2">
+      <Input
+        {...register}
+        placeholder={placeholder}
+        className="h-12 rounded-xl bg-slate-100 border-none focus:ring-2 focus:ring-primary/30 transition-all"
+      />
+      {error && <p className="text-red-500 text-xs">{error}</p>}
+    </div>
   );
 }
+
 
 // Sub-component for clean code
 function ContactItem({ icon: Icon, title, content, href }: { icon: any, title: string, content: string, href?: string }) {

@@ -1,36 +1,34 @@
 import type { Metadata } from "next";
 
-
-
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "Behind GEN",
 
   description:
-    "Learn more about Cyberpeers — a UK-based digital marketing and technology agency helping brands grow through web development, SEO, branding, UI/UX design, and performance marketing.",
+    "Meet the leadership and vision behind Gen Sourcing. Discover the experience, global expertise, and values that drive our UK-based sourcing and procurement operations.",
 
   keywords: [
-    "About Cyberpeers",
-    "Cyberpeers Team",
-    "Digital Marketing Experts UK",
-    "Web Development Agency UK",
-    "SEO Specialists",
-    "Performance Marketing Agency",
-    "Creative Tech Team",
-    "Brand Strategy Agency",
+    "Behind Gen Sourcing",
+    "Gen Sourcing Leadership",
+    "UK Procurement Experts",
+    "Sourcing Management Team",
+    "Global Supply Chain Professionals",
+    "Milton Keynes Sourcing Company",
+    "International Trade Experts",
+    "Gen Sourcing Founders",
   ],
 
   openGraph: {
-    title: "About Cyberpeers | Digital Marketing & Tech Agency",
+    title: "Behind GEN | Leadership & Vision | Gen Sourcing",
     description:
-      "Discover the team, mission, and vision behind Cyberpeers. We combine technology, creativity, and strategy to help businesses scale with measurable results.",
-    url: "https://cyberpeers.co.uk/about",
-    siteName: "Cyberpeers",
+      "Explore the expertise and global sourcing experience behind Gen Sourcing. Our leadership team ensures ethical manufacturing, transparency, and structured supply chain execution.",
+    url: "https://gensourcing.co.uk/behind-gen",
+    siteName: "Gen Sourcing",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "About Cyberpeers Digital Marketing & Tech Agency",
+        alt: "Behind GEN - Gen Sourcing Leadership",
       },
     ],
     locale: "en_US",
@@ -39,19 +37,20 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "About Cyberpeers | Digital Marketing & Tech Agency",
+    title: "Behind GEN | Gen Sourcing",
     description:
-      "Meet the experts behind Cyberpeers — delivering innovative web, SEO, branding, and marketing solutions.",
+      "Meet the professionals driving global sourcing, procurement, and supply chain excellence at Gen Sourcing.",
     images: ["/logo.png"],
   },
 
   alternates: {
-    canonical: "https://cyberpeers.co.uk/about",
+    canonical: "https://gensourcing.co.uk/behind-gen",
   },
+
+  category: "business",
 };
 
-
-export default function AboutLayout({
+export default function BehindGenLayout({
   children,
 }: {
   children: React.ReactNode;

@@ -1,36 +1,34 @@
 import type { Metadata } from "next";
 
-
-
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "Sourcing Portfolio",
 
   description:
-    "Learn more about Cyberpeers — a UK-based digital marketing and technology agency helping brands grow through web development, SEO, branding, UI/UX design, and performance marketing.",
+    "Explore Gen Sourcing’s sourcing portfolio showcasing our successful projects, verified supplier collaborations, and global procurement achievements. See how we deliver reliable, ethical, and efficient sourcing solutions.",
 
   keywords: [
-    "About Cyberpeers",
-    "Cyberpeers Team",
-    "Digital Marketing Experts UK",
-    "Web Development Agency UK",
-    "SEO Specialists",
-    "Performance Marketing Agency",
-    "Creative Tech Team",
-    "Brand Strategy Agency",
+    "Gen Sourcing Portfolio",
+    "Global Sourcing Projects",
+    "Supplier Collaboration Cases",
+    "Procurement Success Stories",
+    "Ethical Sourcing Portfolio",
+    "International Manufacturing Projects",
+    "Supply Chain Achievements",
+    "Verified Supplier Network",
   ],
 
   openGraph: {
-    title: "About Cyberpeers | Digital Marketing & Tech Agency",
+    title: "Sourcing Portfolio | Gen Sourcing",
     description:
-      "Discover the team, mission, and vision behind Cyberpeers. We combine technology, creativity, and strategy to help businesses scale with measurable results.",
-    url: "https://cyberpeers.co.uk/about",
-    siteName: "Cyberpeers",
+      "Discover Gen Sourcing’s portfolio of global sourcing projects, highlighting successful collaborations, quality management, and ethical procurement practices.",
+    url: "https://gensourcing.co.uk/sourcing-portfolio",
+    siteName: "Gen Sourcing",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "About Cyberpeers Digital Marketing & Tech Agency",
+        alt: "Gen Sourcing Sourcing Portfolio",
       },
     ],
     locale: "en_US",
@@ -39,19 +37,20 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "About Cyberpeers | Digital Marketing & Tech Agency",
+    title: "Sourcing Portfolio | Gen Sourcing",
     description:
-      "Meet the experts behind Cyberpeers — delivering innovative web, SEO, branding, and marketing solutions.",
+      "View Gen Sourcing’s portfolio of verified supplier collaborations, procurement projects, and ethical sourcing success stories.",
     images: ["/logo.png"],
   },
 
   alternates: {
-    canonical: "https://cyberpeers.co.uk/about",
+    canonical: "https://gensourcing.co.uk/sourcing-portfolio",
   },
+
+  category: "business",
 };
 
-
-export default function AboutLayout({
+export default function SourcingPortfolioLayout({
   children,
 }: {
   children: React.ReactNode;

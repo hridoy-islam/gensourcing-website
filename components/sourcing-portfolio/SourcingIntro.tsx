@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { sourcingData } from "@/utils/content";
+import { LogosGrid } from "./LogosGrid";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -31,8 +32,8 @@ export const SourcingIntro = () => {
 
   return (
     <section ref={containerRef} className="w-full py-24  bg-white selection:bg-black selection:text-white">
-      <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto text-center">
+      <div className="container mx-auto ">
+        <div className=" mx-auto text-center">
           
           {/* Subtle Accent Label */}
           <span className="fade-up inline-block text-sm font-bold tracking-[0.3em] uppercase mb-6">
@@ -57,6 +58,8 @@ export const SourcingIntro = () => {
           
           
         </div>
+              <LogosGrid/>
+        
       </div>
     </section>
   );

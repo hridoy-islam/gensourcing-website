@@ -1,36 +1,34 @@
 import type { Metadata } from "next";
 
-
-
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "Our Story",
 
   description:
-    "Learn more about Cyberpeers — a UK-based digital marketing and technology agency helping brands grow through web development, SEO, branding, UI/UX design, and performance marketing.",
+    "Discover the story behind Gen Sourcing — a UK-based sourcing and procurement agency built on transparency, ethical manufacturing, and long-term global partnerships.",
 
   keywords: [
-    "About Cyberpeers",
-    "Cyberpeers Team",
-    "Digital Marketing Experts UK",
-    "Web Development Agency UK",
-    "SEO Specialists",
-    "Performance Marketing Agency",
-    "Creative Tech Team",
-    "Brand Strategy Agency",
+    "Gen Sourcing Story",
+    "About Gen Sourcing",
+    "UK Sourcing Company",
+    "Procurement Agency UK",
+    "Supply Chain Experts",
+    "Ethical Manufacturing",
+    "Global Supplier Network",
+    "Milton Keynes Sourcing Agency",
   ],
 
   openGraph: {
-    title: "About Cyberpeers | Digital Marketing & Tech Agency",
+    title: "Our Story | Gen Sourcing",
     description:
-      "Discover the team, mission, and vision behind Cyberpeers. We combine technology, creativity, and strategy to help businesses scale with measurable results.",
-    url: "https://cyberpeers.co.uk/about",
-    siteName: "Cyberpeers",
+      "Learn how Gen Sourcing was founded and how we connect international buyers with trusted manufacturers through structured, ethical, and transparent sourcing solutions.",
+    url: "https://gensourcing.co.uk/our-story",
+    siteName: "Gen Sourcing",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "About Cyberpeers Digital Marketing & Tech Agency",
+        alt: "Gen Sourcing - Our Story",
       },
     ],
     locale: "en_US",
@@ -39,19 +37,18 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "About Cyberpeers | Digital Marketing & Tech Agency",
+    title: "Our Story | Gen Sourcing",
     description:
-      "Meet the experts behind Cyberpeers — delivering innovative web, SEO, branding, and marketing solutions.",
+      "Explore the mission, vision, and values behind Gen Sourcing — a trusted UK procurement and supply chain partner.",
     images: ["/logo.png"],
   },
 
   alternates: {
-    canonical: "https://cyberpeers.co.uk/about",
+    canonical: "https://gensourcing.co.uk/our-story",
   },
 };
 
-
-export default function AboutLayout({
+export default function OurStoryLayout({
   children,
 }: {
   children: React.ReactNode;

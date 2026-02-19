@@ -60,13 +60,9 @@ export function Hero({
           >
             {title.split(" ").map((word, i) => (
               <span key={i} className="inline-block mr-3 last:mr-0">
-                {word === "Sourcing" ? (
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">
+              
                     {word}
-                  </span>
-                ) : (
-                  word
-                )}
+          
               </span>
             ))}
           </motion.h1>

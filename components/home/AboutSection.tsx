@@ -11,7 +11,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export function AboutSection() {
-  const { title, description, description2, buttonText, buttonHref, image } = homeContent.about;
+  const { title, description, description2,  image } = homeContent.about;
   const sectionRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -45,13 +45,7 @@ export function AboutSection() {
               <p>{description}</p>
               <p>{description2}</p>
             </div>
-            <div className="about-text pt-4">
-              <Link href={buttonHref}>
-                <Button className="bg-white text-black hover:bg-zinc-200 rounded-none px-8 py-6">
-                  {buttonText}
-                </Button>
-              </Link>
-            </div>
+            
           </div>
 
           <div className="about-image w-full lg:w-1/2 relative h-[600px] bg-zinc-800">

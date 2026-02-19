@@ -1,62 +1,79 @@
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import {
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+  Youtube,
+
+} from "lucide-react";
+
+import { FaPinterest } from "react-icons/fa";
+
+
 
 export const siteConfig = {
   name: "Gen Sourcing Ltd",
-  description: "Connecting international buyers with reliable manufacturers across Asia and Africa. Ethical, transparent, and end-to-end apparel sourcing solutions.",
-  address: "London, United Kingdom & Dhaka, Bangladesh", 
-  email: "contact@gensourcing.com", 
-  
+  description:
+    "Connecting international buyers with reliable manufacturers across Asia and Africa. Ethical, transparent, and end-to-end apparel sourcing solutions.",
+
+  address:
+    "100 Avebury Boulevard, Milton Keynes, MK9 1FH United Kingdom",
+
+  email: "team@gensourcing.co.uk",
+
+  phone: "+44 (0) 208 004 6475",
+
+  // ==============================
   // Main Navigation
+  // ==============================
   navItems: [
-    { 
-      label: "Home", 
-      href: "/" 
-    },
-    { 
-      label: "Our Story", 
-      href: "/our-story" 
-    },
-    { 
-      label: "How We Deliver", 
+    { label: "Home", href: "/" },
+    { label: "Our Story", href: "/our-story" },
+    {
+      label: "How We Deliver",
       href: "/delivery-process",
-      // Sub-menu items
       items: [
         { label: "Market Insights", href: "/market-insights" },
         { label: "Partner Network", href: "/partner-network" },
         { label: "Global Logistics", href: "/global-logistics" },
         { label: "Quality & Innovation", href: "/quality-innovation" },
         { label: "Responsible Standards", href: "/responsible-standards" },
-      ]
+      ],
     },
-    { 
-      label: "Behind Gen", 
-      href: "/behind-gen" 
-    },
-    { 
-      label: "Sourcing Portfolio", 
-      href: "/sourcing-portfolio" 
-    },
-    { 
-      label: "Partner With Us", 
-      href: "/partner-with-us" 
-    },
+    { label: "Behind Gen", href: "/behind-gen" },
+    { label: "Sourcing Portfolio", href: "/sourcing-portfolio" },
+    { label: "Partner With Us", href: "/partner-with-us" },
   ],
-  
-  links: {
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
-    instagram: "https://instagram.com",
-  },
-  
+
+  // ==============================
+  // Social Links
+  // ==============================
   socials: [
-    { icon: Facebook, href: "https://facebook.com" },
-    { icon: Linkedin, href: "https://linkedin.com" },
-    { icon: Twitter, href: "https://twitter.com" },
-    { icon: Instagram, href: "https://instagram.com" }
+    {
+      name: "LinkedIn",
+      icon: Linkedin,
+      href: "https://www.linkedin.com/company/gen-sourcing-limited/",
+    },
+    {
+      name: "X",
+      icon: Twitter, // Twitter icon represents X
+      href: "https://x.com/gen_sourcing",
+    },
+    {
+      name: "YouTube",
+      icon: Youtube,
+      href: "https://www.youtube.com/@GenSourcingUk",
+    },
+    {
+      name: "Pinterest",
+      icon: FaPinterest,
+      href: "https://uk.pinterest.com/gensourcing_co_uk/",
+    },
   ],
-  
+
+  // ==============================
   // Footer Navigation
+  // ==============================
   footerNav: [
     {
       title: "Company",

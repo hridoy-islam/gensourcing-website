@@ -3,8 +3,9 @@ import { Manrope, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/utils/utils";
 import { Providers } from "@/app/providers";
-import { Header } from "@/components/public/Header"; 
+import { Header } from "@/components/public/Header";
 import { Footer } from "@/components/public/Footer";
+import { MainContent } from "@/components/public/MainContent";
 
 // Font Configuration
 const fontHeading = Manrope({
@@ -16,8 +17,6 @@ const fontSans = DM_Sans({
   subsets: ["latin"],
   variable: "--font-sans",
 });
-
-
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gensourcing.co.uk"),
@@ -113,7 +112,6 @@ export const metadata: Metadata = {
   applicationName: "Gen Sourcing",
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -130,9 +128,7 @@ export default function RootLayout({
       >
         <Providers>
           <Header />
-          <main className="flex-1">
-            {children}
-          </main>
+          <MainContent>{children}</MainContent>
           <Footer />
         </Providers>
       </body>
