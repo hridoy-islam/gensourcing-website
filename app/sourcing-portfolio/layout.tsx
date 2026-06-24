@@ -4,10 +4,10 @@ export const metadata: Metadata = {
   title: "Sourcing Portfolio",
 
   description:
-    "Explore Gen Sourcing’s sourcing portfolio showcasing our successful projects, verified supplier collaborations, and global procurement achievements. See how we deliver reliable, ethical, and efficient sourcing solutions.",
+    "Explore Sultan Apparels’s sourcing portfolio showcasing our successful projects, verified supplier collaborations, and global procurement achievements. See how we deliver reliable, ethical, and efficient sourcing solutions.",
 
   keywords: [
-    "Gen Sourcing Portfolio",
+    "Sultan Apparels Portfolio",
     "Global Sourcing Projects",
     "Supplier Collaboration Cases",
     "Procurement Success Stories",
@@ -18,17 +18,17 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "Sourcing Portfolio | Gen Sourcing",
+    title: "Sourcing Portfolio | Sultan Apparels",
     description:
-      "Discover Gen Sourcing’s portfolio of global sourcing projects, highlighting successful collaborations, quality management, and ethical procurement practices.",
+      "Discover Sultan Apparels’s portfolio of global sourcing projects, highlighting successful collaborations, quality management, and ethical procurement practices.",
     url: "https://gensourcing.co.uk/sourcing-portfolio",
-    siteName: "Gen Sourcing",
+    siteName: "Sultan Apparels",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Gen Sourcing Sourcing Portfolio",
+        alt: "Sultan Apparels Sourcing Portfolio",
       },
     ],
     locale: "en_US",
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Sourcing Portfolio | Gen Sourcing",
+    title: "Sourcing Portfolio | Sultan Apparels",
     description:
-      "View Gen Sourcing’s portfolio of verified supplier collaborations, procurement projects, and ethical sourcing success stories.",
+      "View Sultan Apparels’s portfolio of verified supplier collaborations, procurement projects, and ethical sourcing success stories.",
     images: ["/logo.png"],
   },
 

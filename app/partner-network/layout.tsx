@@ -4,10 +4,10 @@ export const metadata: Metadata = {
   title: "Partner Network",
 
   description:
-    "Explore Gen Sourcing’s global partner network — connecting verified manufacturers, suppliers, and buyers across Asia, Africa, and beyond for ethical, transparent, and efficient sourcing solutions.",
+    "Explore Sultan Apparels’s global partner network — connecting verified manufacturers, suppliers, and buyers across Asia, Africa, and beyond for ethical, transparent, and efficient sourcing solutions.",
 
   keywords: [
-    "Gen Sourcing Partner Network",
+    "Sultan Apparels Partner Network",
     "Global Supplier Network",
     "Verified Manufacturers",
     "Ethical Sourcing Partners",
@@ -18,17 +18,17 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "Partner Network | Gen Sourcing",
+    title: "Partner Network | Sultan Apparels",
     description:
-      "Connect with Gen Sourcing’s trusted network of global suppliers and manufacturers. Our structured partner network ensures reliable sourcing, quality, and transparency.",
+      "Connect with Sultan Apparels’s trusted network of global suppliers and manufacturers. Our structured partner network ensures reliable sourcing, quality, and transparency.",
     url: "https://gensourcing.co.uk/partner-network",
-    siteName: "Gen Sourcing",
+    siteName: "Sultan Apparels",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Gen Sourcing Partner Network",
+        alt: "Sultan Apparels Partner Network",
       },
     ],
     locale: "en_US",
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Partner Network | Gen Sourcing",
+    title: "Partner Network | Sultan Apparels",
     description:
-      "Discover Gen Sourcing’s global network of verified suppliers and manufacturers — enabling transparent, efficient, and reliable sourcing solutions.",
+      "Discover Sultan Apparels’s global network of verified suppliers and manufacturers — enabling transparent, efficient, and reliable sourcing solutions.",
     images: ["/logo.png"],
   },
 

@@ -66,7 +66,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             className="inline-block text-lg md:text-xl text-zinc-300 font-bold tracking-[6px] uppercase mb-4"
           >
-            Gen Sourcing Ltd.
+            Sultan Apparels Ltd.
           </motion.span>
 
           <motion.h1

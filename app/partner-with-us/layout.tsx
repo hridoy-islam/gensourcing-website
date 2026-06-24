@@ -4,10 +4,10 @@ export const metadata: Metadata = {
   title: "Partner With Us",
 
   description:
-    "Join Gen Sourcing’s trusted global network. We collaborate with manufacturers, suppliers, and strategic partners to deliver ethical, transparent, and efficient sourcing solutions worldwide.",
+    "Join Sultan Apparels’s trusted global network. We collaborate with manufacturers, suppliers, and strategic partners to deliver ethical, transparent, and efficient sourcing solutions worldwide.",
 
   keywords: [
-    "Partner With Gen Sourcing",
+    "Partner With Sultan Apparels",
     "Global Supplier Collaboration",
     "Ethical Manufacturing Partners",
     "International Sourcing Network",
@@ -18,17 +18,17 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "Partner With Us | Gen Sourcing",
+    title: "Partner With Us | Sultan Apparels",
     description:
-      "Become a trusted partner with Gen Sourcing and join our global network of verified suppliers and manufacturers. Collaborate with us for ethical, transparent, and efficient sourcing.",
+      "Become a trusted partner with Sultan Apparels and join our global network of verified suppliers and manufacturers. Collaborate with us for ethical, transparent, and efficient sourcing.",
     url: "https://gensourcing.co.uk/partner-with-us",
-    siteName: "Gen Sourcing",
+    siteName: "Sultan Apparels",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Partner With Gen Sourcing",
+        alt: "Partner With Sultan Apparels",
       },
     ],
     locale: "en_US",
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Partner With Us | Gen Sourcing",
+    title: "Partner With Us | Sultan Apparels",
     description:
-      "Join Gen Sourcing’s global supplier network and collaborate for reliable, ethical, and structured sourcing solutions.",
+      "Join Sultan Apparels’s global supplier network and collaborate for reliable, ethical, and structured sourcing solutions.",
     images: ["/logo.png"],
   },
 

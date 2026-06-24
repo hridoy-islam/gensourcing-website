@@ -126,7 +126,7 @@ export default function PartnerSection() {
                 {/* Image Caption / Metadata */}
                 <div className="flex justify-between items-center text-xs text-neutral-400 font-mono border-b border-neutral-100 pb-2">
                   <span>FIG 1.0 — GLOBAL STANDARDS</span>
-                  <span>GEN SOURCING ARCHIVE</span>
+                  <span>Sultan Apparels ARCHIVE</span>
                 </div>
               </div>
 

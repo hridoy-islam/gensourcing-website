@@ -4,10 +4,10 @@ export const metadata: Metadata = {
   title: "Quality & Innovation",
 
   description:
-    "Gen Sourcing ensures superior quality and innovation in global sourcing. Learn how our structured quality control, ethical practices, and innovative solutions deliver reliable results for businesses worldwide.",
+    "Sultan Apparels ensures superior quality and innovation in global sourcing. Learn how our structured quality control, ethical practices, and innovative solutions deliver reliable results for businesses worldwide.",
 
   keywords: [
-    "Gen Sourcing Quality Control",
+    "Sultan Apparels Quality Control",
     "Innovative Sourcing Solutions",
     "Ethical Manufacturing Practices",
     "Global Supply Chain Excellence",
@@ -18,17 +18,17 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "Quality & Innovation | Gen Sourcing",
+    title: "Quality & Innovation | Sultan Apparels",
     description:
-      "Discover how Gen Sourcing combines innovation, ethical manufacturing, and structured quality control to deliver reliable global sourcing solutions.",
+      "Discover how Sultan Apparels combines innovation, ethical manufacturing, and structured quality control to deliver reliable global sourcing solutions.",
     url: "https://gensourcing.co.uk/quality-innovation",
-    siteName: "Gen Sourcing",
+    siteName: "Sultan Apparels",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Gen Sourcing Quality & Innovation",
+        alt: "Sultan Apparels Quality & Innovation",
       },
     ],
     locale: "en_US",
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Quality & Innovation | Gen Sourcing",
+    title: "Quality & Innovation | Sultan Apparels",
     description:
-      "Explore Gen Sourcing’s commitment to quality assurance, innovative sourcing, and ethical manufacturing for reliable global supply chains.",
+      "Explore Sultan Apparels’s commitment to quality assurance, innovative sourcing, and ethical manufacturing for reliable global supply chains.",
     images: ["/logo.png"],
   },
 

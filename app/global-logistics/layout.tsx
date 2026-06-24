@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Global Logistics",
 
   description:
-    "Gen Sourcing provides structured global logistics solutions, ensuring smooth international shipping, freight coordination, customs support, and end-to-end supply chain visibility for businesses worldwide.",
+    "Sultan Apparels provides structured global logistics solutions, ensuring smooth international shipping, freight coordination, customs support, and end-to-end supply chain visibility for businesses worldwide.",
 
   keywords: [
     "Global Logistics UK",
@@ -18,17 +18,17 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "Global Logistics | Gen Sourcing",
+    title: "Global Logistics | Sultan Apparels",
     description:
-      "Reliable international logistics and freight coordination services by Gen Sourcing. We manage global shipping, compliance, and supply chain operations with precision and transparency.",
+      "Reliable international logistics and freight coordination services by Sultan Apparels. We manage global shipping, compliance, and supply chain operations with precision and transparency.",
     url: "https://gensourcing.co.uk/global-logistics",
-    siteName: "Gen Sourcing",
+    siteName: "Sultan Apparels",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Gen Sourcing Global Logistics Services",
+        alt: "Sultan Apparels Global Logistics Services",
       },
     ],
     locale: "en_US",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Global Logistics | Gen Sourcing",
+    title: "Global Logistics | Sultan Apparels",
     description:
       "International freight, customs coordination, and structured logistics solutions for global businesses.",
     images: ["/logo.png"],

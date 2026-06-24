@@ -12,7 +12,7 @@ import { FaPinterest } from "react-icons/fa";
 
 
 export const siteConfig = {
-  name: "Gen Sourcing Ltd",
+  name: "Sultan Apparels Ltd",
   description:
     "Connecting international buyers with reliable manufacturers across Asia and Africa. Ethical, transparent, and end-to-end apparel sourcing solutions.",
 

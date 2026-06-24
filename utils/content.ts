@@ -11,17 +11,17 @@ export const homeContent = {
   },
   introduction: {
     pretitle: "Global Reach, Local Expertise",
-    title: "Gen Sourcing Ltd.",
+    title: "Sultan Apparels Ltd.",
     description:
-      "Gen Sourcing Ltd. is a UK-registered apparel sourcing company based in Milton Keynes — a dynamic business hub less than an hour north of London. Our dual presence — with client teams in the UK and technical experts on the ground in Bangladesh — ensures close production oversight, clear communication, and high-quality results. We offer end-to-end sourcing solutions, including product development, compliance, logistics, shipping, and multi-stage quality control.",
+      "Sultan Apparels Ltd. is a UK-registered apparel sourcing company based in Milton Keynes — a dynamic business hub less than an hour north of London. Our dual presence — with client teams in the UK and technical experts on the ground in Bangladesh — ensures close production oversight, clear communication, and high-quality results. We offer end-to-end sourcing solutions, including product development, compliance, logistics, shipping, and multi-stage quality control.",
     buttonText: "Our Story",
     buttonHref: "/about",
     image: "/intro.jpeg",
   },
   highlights: {
-    title: "Why Choose Gen Sourcing",
+    title: "Why Choose Sultan Apparels",
     description:
-      "With Gen Sourcing, you get more than a supplier — you gain a reliable partner dedicated to helping you grow, reduce costs, and bring products to market faster and smarter.",
+      "With Sultan Apparels, you get more than a supplier — you gain a reliable partner dedicated to helping you grow, reduce costs, and bring products to market faster and smarter.",
     stats: [
       { label: "Trusted Factories", value: "73+" },
       { label: "Ethical Sourcing Partner", value: "100%" },
@@ -66,7 +66,7 @@ export const homeContent = {
     image: "/home1.jpg",
   },
   about: {
-    title: "Behind The Gen Sourcing",
+    title: "Behind The Sultan Apparels",
     description:
       "Led by founders who have lived every side of fashion, we turn intent into garments with craft, care, and absolute discretion. From boutique runs to fully compliant factories supplying premium high-street and heritage brands across Europe and North America, our leadership brings a decade+ of cross-functional expertise—design, sourcing, retail, e-commerce, logistics, finance, and compliance.",
     description2:
@@ -121,9 +121,9 @@ export const ourStoryContent = {
   },
 
   companyIntro: {
-    title: "Gen Sourcing Ltd",
+    title: "Sultan Apparels Ltd",
     description:
-      "At Gen Sourcing Ltd, we connect international buyers with a carefully curated network of reliable manufacturers across Bangladesh, India, China, Cambodia, Ethiopia, and beyond. Our sourcing portfolio ranges from fully audited, ethically compliant factories certified by BSCI, WRAP, SEDEX, and OEKO-TEX to agile small-scale units capable of handling low MOQs and bespoke production requirements.\n\nWith operational bases in both the UK and Dhaka, Bangladesh, our founding team and technical specialists maintain direct oversight at every stage of production — ensuring compliance, consistency, and uncompromising quality.\n\nOur capabilities span the full spectrum of apparel categories including T-shirts, polos, shirts, hoodies, jackets, denim, trousers, lingerie, socks, caps, activewear, and more. Supported by trusted partners in yarn spinning, dyeing, printing, washing, and finishing, we manage complex, end-to-end production with precision.\n\nBeyond manufacturing, we deliver a complete sourcing solution — product development, prototyping, sampling, packaging, logistics, shipping, warehousing, and independent quality control inspections. Buyers never pay a service fee. We operate transparently through direct agreements with manufacturers, ensuring fairness, clarity, and negotiable terms.",
+      "At Sultan Apparels Ltd, we connect international buyers with a carefully curated network of reliable manufacturers across Bangladesh, India, China, Cambodia, Ethiopia, and beyond. Our sourcing portfolio ranges from fully audited, ethically compliant factories certified by BSCI, WRAP, SEDEX, and OEKO-TEX to agile small-scale units capable of handling low MOQs and bespoke production requirements.\n\nWith operational bases in both the UK and Dhaka, Bangladesh, our founding team and technical specialists maintain direct oversight at every stage of production — ensuring compliance, consistency, and uncompromising quality.\n\nOur capabilities span the full spectrum of apparel categories including T-shirts, polos, shirts, hoodies, jackets, denim, trousers, lingerie, socks, caps, activewear, and more. Supported by trusted partners in yarn spinning, dyeing, printing, washing, and finishing, we manage complex, end-to-end production with precision.\n\nBeyond manufacturing, we deliver a complete sourcing solution — product development, prototyping, sampling, packaging, logistics, shipping, warehousing, and independent quality control inspections. Buyers never pay a service fee. We operate transparently through direct agreements with manufacturers, ensuring fairness, clarity, and negotiable terms.",
     buttonText: "View Sourcing Portfolio",
     buttonHref: "/sourcing-portfolio",
     image: "/s1.jpg",
@@ -180,14 +180,14 @@ export const partnerWithUsContent = {
   hero: {
     title: "Partner With Us",
     subtitle:
-      "Join Gen Sourcing’s Global Manufacturing Network — Built on Transparency, Compliance, and Long-Term Growth.",
+      "Join Sultan Apparels’s Global Manufacturing Network — Built on Transparency, Compliance, and Long-Term Growth.",
   },
 
   partnership: {
     pretitle: "GLOBAL MANUFACTURING NETWORK",
     title: "Grow With a Trusted International Sourcing Partner",
     description:
-      "At Gen Sourcing Ltd, we are always looking to collaborate with committed, quality-driven apparel manufacturers who share our values of transparency, compliance, and operational excellence.\n\nWhether you operate a large-scale, internationally certified factory or a specialized unit catering to low MOQs, we connect our partners with premium international buyers across the UK, Australia, Europe, and other key global markets.\n\nThrough our dual presence — with client teams in the UK and technical experts on the ground in Bangladesh — we ensure clear communication, hands-on production oversight, and sustainable long-term partnerships. We don’t just source products — we build trusted relationships that create mutual growth.",
+      "At Sultan Apparels Ltd, we are always looking to collaborate with committed, quality-driven apparel manufacturers who share our values of transparency, compliance, and operational excellence.\n\nWhether you operate a large-scale, internationally certified factory or a specialized unit catering to low MOQs, we connect our partners with premium international buyers across the UK, Australia, Europe, and other key global markets.\n\nThrough our dual presence — with client teams in the UK and technical experts on the ground in Bangladesh — we ensure clear communication, hands-on production oversight, and sustainable long-term partnerships. We don’t just source products — we build trusted relationships that create mutual growth.",
 
     requirementsTitle: "What We Look For",
     requirements: [
@@ -224,13 +224,13 @@ export const behindGenContent = {
   hero: {
     title: "Behind Gen",
     subtitle:
-      "Threads of Talent, Woven with Purpose — The People, Experience, and Principles Powering Gen Sourcing.",
+      "Threads of Talent, Woven with Purpose — The People, Experience, and Principles Powering Sultan Apparels.",
   },
 
   sectionOne: {
     title: "Threads of Talent, Woven with Purpose",
     description: `
-At Gen Sourcing, we turn ideas into production-ready garments through a refined, collaborative development process that blends creativity with technical expertise.
+At Sultan Apparels, we turn ideas into production-ready garments through a refined, collaborative development process that blends creativity with technical expertise.
 
 Our team works closely with clients to understand design intent, product functionality, key tolerances, and critical features — while offering clear guidance on production feasibility through technical insight and visual interpretation.
 
@@ -274,13 +274,13 @@ We understand the language of both buyers and manufacturers, along with the cult
   sectionFour: {
     title: "More Than a Service — A Values-Driven Partnership",
     description: `
-At Gen Sourcing, you are not simply engaging a sourcing service — you are partnering with a globally connected, values-driven team committed to building a more ethical, agile, and efficient fashion supply chain.
+At Sultan Apparels, you are not simply engaging a sourcing service — you are partnering with a globally connected, values-driven team committed to building a more ethical, agile, and efficient fashion supply chain.
 
-United by purpose, guided by experience, and driven by excellence, we are determined to establish Gen Sourcing as one of the most respected and ethically focused apparel sourcing companies in the industry.
+United by purpose, guided by experience, and driven by excellence, we are determined to establish Sultan Apparels as one of the most respected and ethically focused apparel sourcing companies in the industry.
 
 With integrity at our core and quality as our benchmark, we are setting new standards for responsible business in global fashion.
 
-The result is a team that understands sourcing not only in theory, but through lived experience. With Gen Sourcing, you gain more than a service provider — you gain a principled, forward-thinking partner deeply invested in your long-term success.
+The result is a team that understands sourcing not only in theory, but through lived experience. With Sultan Apparels, you gain more than a service provider — you gain a principled, forward-thinking partner deeply invested in your long-term success.
     `,
     image: "/b4.jpg",
   },
@@ -346,13 +346,13 @@ export const sourcingData = {
   hero: {
     title: "Sourcing Portfolio",
     subtitle:
-      "Threads of Talent, Woven with Purpose — The People, Experience, and Principles Powering Gen Sourcing.",
+      "Threads of Talent, Woven with Purpose — The People, Experience, and Principles Powering Sultan Apparels.",
   },
 
   singleSection: {
     title: "Our Global Buyer Network",
     description: `
-At GEN Sourcing, our approach is shaped by the experience within our founding group, built through long-term involvement in global sourcing, manufacturing, and apparel production. This background gives us a clear understanding of what international buyers expect — reliable timelines, transparent communication, and consistent product quality.
+At Sultan Apparels, our approach is shaped by the experience within our founding group, built through long-term involvement in global sourcing, manufacturing, and apparel production. This background gives us a clear understanding of what international buyers expect — reliable timelines, transparent communication, and consistent product quality.
 
 We carry these proven practices into everything we do. Our sourcing model is built on precision, ethical manufacturing, and structured quality control, ensuring each project meets the standards of fast-moving global markets. From product development to final delivery, we focus on clarity, dependability, and smooth execution.
 

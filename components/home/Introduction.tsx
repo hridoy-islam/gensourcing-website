@@ -57,7 +57,7 @@ export function Introduction() {
           <div ref={imageRef} className="w-full lg:w-1/2 relative h-[500px] rounded-lg overflow-hidden shadow-2xl">
             <Image
               src={image}
-              alt="Gen Sourcing Office"
+              alt="Sultan Apparels Office"
               fill
               className="object-cover"
             />

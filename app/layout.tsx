@@ -22,15 +22,15 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://gensourcing.co.uk"),
 
   title: {
-    default: "Gen Sourcing | Procurement & Supply Chain Solutions",
-    template: "%s | Gen Sourcing",
+    default: "Sultan Apparels | Procurement & Supply Chain Solutions",
+    template: "%s | Sultan Apparels",
   },
 
   description:
-    "Gen Sourcing is a UK-based sourcing and procurement agency connecting businesses with verified suppliers and tailored supply chain solutions.",
+    "Sultan Apparels is a UK-based sourcing and procurement agency connecting businesses with verified suppliers and tailored supply chain solutions.",
 
   keywords: [
-    "Gen Sourcing",
+    "Sultan Apparels",
     "Sourcing Agency UK",
     "Procurement Services",
     "Supply Chain Solutions",
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
     "Digital Sourcing Tools",
   ],
 
-  authors: [{ name: "Gen Sourcing Team" }],
-  creator: "Gen Sourcing",
-  publisher: "Gen Sourcing",
+  authors: [{ name: "Sultan Apparels Team" }],
+  creator: "Sultan Apparels",
+  publisher: "Sultan Apparels",
 
   robots: {
     index: true,
@@ -79,17 +79,17 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
 
   openGraph: {
-    title: "Gen Sourcing | Procurement & Supply Chain Solutions",
+    title: "Sultan Apparels | Procurement & Supply Chain Solutions",
     description:
-      "Gen Sourcing helps businesses connect with verified suppliers and optimise sourcing and procurement processes for scalable growth.",
+      "Sultan Apparels helps businesses connect with verified suppliers and optimise sourcing and procurement processes for scalable growth.",
     url: "https://gensourcing.co.uk",
-    siteName: "Gen Sourcing",
+    siteName: "Sultan Apparels",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Gen Sourcing Agency",
+        alt: "Sultan Apparels Agency",
       },
     ],
     locale: "en_US",
@@ -98,7 +98,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Gen Sourcing | Procurement & Supply Chain Solutions",
+    title: "Sultan Apparels | Procurement & Supply Chain Solutions",
     description:
       "Supplier network, procurement support and smart sourcing solutions for growing businesses.",
     images: ["/logo.png"],
@@ -109,7 +109,7 @@ export const metadata: Metadata = {
   },
 
   category: "business",
-  applicationName: "Gen Sourcing",
+  applicationName: "Sultan Apparels",
 };
 
 export default function RootLayout({

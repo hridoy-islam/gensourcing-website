@@ -4,10 +4,10 @@ export const metadata: Metadata = {
   title: "Get In Touch",
 
   description:
-    "Contact Gen Sourcing — a UK-based sourcing and procurement agency. Speak with our team for global supplier connections, logistics coordination, and structured supply chain solutions.",
+    "Contact Sultan Apparels — a UK-based sourcing and procurement agency. Speak with our team for global supplier connections, logistics coordination, and structured supply chain solutions.",
 
   keywords: [
-    "Contact Gen Sourcing",
+    "Contact Sultan Apparels",
     "Sourcing Agency UK Contact",
     "Procurement Services UK",
     "Supply Chain Consultation",
@@ -17,17 +17,17 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "Contact Gen Sourcing | Procurement & Supply Chain Experts",
+    title: "Contact Sultan Apparels | Procurement & Supply Chain Experts",
     description:
-      "Get in touch with Gen Sourcing for trusted global sourcing, supplier verification, and logistics coordination. Our team is ready to assist your business.",
+      "Get in touch with Sultan Apparels for trusted global sourcing, supplier verification, and logistics coordination. Our team is ready to assist your business.",
     url: "https://gensourcing.co.uk/get-in-touch",
-    siteName: "Gen Sourcing",
+    siteName: "Sultan Apparels",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Contact Gen Sourcing",
+        alt: "Contact Sultan Apparels",
       },
     ],
     locale: "en_US",
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Contact Gen Sourcing | UK Sourcing Agency",
+    title: "Contact Sultan Apparels | UK Sourcing Agency",
     description:
-      "Reach out to Gen Sourcing for procurement, supplier sourcing, and logistics support.",
+      "Reach out to Sultan Apparels for procurement, supplier sourcing, and logistics support.",
     images: ["/logo.png"],
   },
 
