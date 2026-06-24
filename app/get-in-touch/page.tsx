@@ -69,6 +69,7 @@ export default function GetInTouchPage() {
         <section className="pb-8  container mx-auto -mt-32">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             
+            
             {/* IMAGE */}
             <div className="relative h-[400px] lg:h-[500px] overflow-hidden rounded-2xl">
               <img
