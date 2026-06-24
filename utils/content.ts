@@ -3,7 +3,7 @@ import { Megaphone, Code, Paintbrush, CheckCircle2 } from "lucide-react";
 export const homeContent = {
   hero: {
     title: "Seamless Apparel Network",
-    subtitle: "Your Global Sourcing Partner",
+    subtitle: "World-Class Apparel Manufacturing. Sustainable. Scalable. Reliable.",
     buttonText: "Explore Network",
     buttonHref: "/our-story",
     video:

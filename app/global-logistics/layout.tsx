@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Global Logistics",
-
   description:
     "Sultan Apparels provides structured global logistics solutions, ensuring smooth international shipping, freight coordination, customs support, and end-to-end supply chain visibility for businesses worldwide.",
 

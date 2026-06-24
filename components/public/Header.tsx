@@ -61,12 +61,12 @@ export function Header() {
 
             {/* Center - Logo */}
             <Link href="/" className="relative block">
-              <div className="relative h-9 w-36 md:h-20 md:w-40">
+              <div className="relative h-9 w-36 md:h-40 md:w-40">
                 <Image
                   src="/logo.png"
                   alt="Sultan Apparels"
                   fill
-                  className="object-contain"
+                  className="object-contain scale-125"
                   priority
                 />
               </div>

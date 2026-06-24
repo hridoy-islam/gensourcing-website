@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { homeContent } from "@/utils/content";
@@ -11,11 +11,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export function Introduction() {
-  const { pretitle, title, description, buttonText, buttonHref, image } = homeContent.introduction;
+  const { pretitle, title, description, buttonText, buttonHref } = homeContent.introduction;
   
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const imageRef = useRef<HTMLDivElement | null>(null);
   const textRef = useRef<HTMLDivElement | null>(null);
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  // Unsplash image for apparel/office setting
+  const imageSrc = "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=2070&auto=format&fit=crop";
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -55,14 +59,32 @@ export function Introduction() {
         <div className="flex flex-col lg:flex-row items-center gap-16">
           {/* Image Side */}
           <div ref={imageRef} className="w-full lg:w-1/2 relative h-[500px] rounded-lg overflow-hidden shadow-2xl">
+            {/* Loading Skeleton */}
+            <div className={`absolute inset-0 bg-gray-200 transition-opacity duration-700 ${
+              imageLoaded ? 'opacity-0' : 'opacity-100'
+            }`}>
+              <div className="w-full h-full animate-pulse bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200" />
+            </div>
+            
             <Image
-              src={image}
+              src={imageSrc}
               alt="Sultan Apparels Office"
               fill
-              className="object-cover"
+              className={`object-cover transition-opacity duration-700 ${
+                imageLoaded ? 'opacity-100' : 'opacity-0'
+              }`}
+              onLoad={() => setImageLoaded(true)}
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              quality={90}
+              unoptimized
             />
-            {/* Decorative Element */}
-            <div className="absolute bottom-0 left-0 w-24 h-24 bg-black/5" />
+            
+            {/* Decorative Elements */}
+            <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 backdrop-blur-sm" />
+            <div className="absolute top-0 right-0 w-32 h-32 border-2 border-white/20 rounded-full -translate-y-1/2 translate-x-1/2" />
+            
+            {/* Overlay Gradient for depth */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-black/20 via-transparent to-transparent" />
           </div>
 
           {/* Text Side */}
@@ -73,7 +95,7 @@ export function Introduction() {
             <h2 className="text-4xl md:text-5xl font-bold text-black leading-tight">
               {title}
             </h2>
-            <div className="w-20 h-1 bg-black" />
+            <div className="w-20 h-1 bg-primary" />
             <p className="text-lg text-zinc-600 leading-relaxed">
               {description}
             </p>
