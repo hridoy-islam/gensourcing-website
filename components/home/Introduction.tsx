@@ -79,7 +79,7 @@ export function Introduction() {
             </p>
             <div className="pt-4">
               <Link href={buttonHref}>
-                <Button size="lg" className="bg-black text-white hover:bg-zinc-800 rounded-none px-8">
+                <Button variant="default" size="lg" className="rounded-none px-8">
                   {buttonText}
                 </Button>
               </Link>

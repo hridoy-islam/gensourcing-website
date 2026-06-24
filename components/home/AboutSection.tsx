@@ -36,12 +36,12 @@ export function AboutSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 bg-zinc-900 text-white overflow-hidden">
+    <section ref={sectionRef} className="py-24 bg-secondary-foreground text-background overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex flex-col-reverse lg:flex-row items-center gap-16">
           <div className="w-full lg:w-1/2 space-y-8">
-            <h2 className="about-text text-4xl font-bold text-white">{title}</h2>
-            <div className="about-text space-y-6 text-zinc-400 leading-relaxed text-lg">
+            <h2 className="about-text text-4xl font-bold text-background">{title}</h2>
+            <div className="about-text space-y-6 text-zinc-200 leading-relaxed text-lg">
               <p>{description}</p>
               <p>{description2}</p>
             </div>

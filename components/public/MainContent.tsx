@@ -28,7 +28,7 @@ export function MainContent({ children }: { children: React.ReactNode }) {
 
   return (
     <main
-      className="flex-1 duration-300 bg-black transition-[padding-top]"
+      className="flex-1 duration-300 bg-background transition-[padding-top]"
       style={{ paddingTop: paddingTop }}
     >
       {children}

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Partner With Us | Sultan Apparels",
     description:
       "Become a trusted partner with Sultan Apparels and join our global network of verified suppliers and manufacturers. Collaborate with us for ethical, transparent, and efficient sourcing.",
-    url: "https://gensourcing.co.uk/partner-with-us",
+    url: "https://sultan-apparels.com/partner-with-us",
     siteName: "Sultan Apparels",
     images: [
       {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://gensourcing.co.uk/partner-with-us",
+    canonical: "https://sultan-apparels.com/partner-with-us",
   },
 
   category: "business",

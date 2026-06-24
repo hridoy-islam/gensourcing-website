@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Behind GEN",
+  title: "Behind Sultan Apparels",
 
   description:
     "Meet the leadership and vision behind Sultan Apparels. Discover the experience, global expertise, and values that drive our UK-based sourcing and procurement operations.",
@@ -18,17 +18,17 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "Behind GEN | Leadership & Vision | Sultan Apparels",
+    title: "Behind Sultan Apparels | Leadership & Vision | Sultan Apparels",
     description:
       "Explore the expertise and global sourcing experience behind Sultan Apparels. Our leadership team ensures ethical manufacturing, transparency, and structured supply chain execution.",
-    url: "https://gensourcing.co.uk/behind-gen",
+    url: "https://sultan-apparels.com/behind-sultan-apparels",
     siteName: "Sultan Apparels",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Behind GEN - Sultan Apparels Leadership",
+        alt: "Behind Sultan Apparels - Sultan Apparels Leadership",
       },
     ],
     locale: "en_US",
@@ -37,14 +37,14 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Behind GEN | Sultan Apparels",
+    title: "Behind Sultan Apparels | Sultan Apparels",
     description:
       "Meet the professionals driving global sourcing, procurement, and supply chain excellence at Sultan Apparels.",
     images: ["/logo.png"],
   },
 
   alternates: {
-    canonical: "https://gensourcing.co.uk/behind-gen",
+    canonical: "https://sultan-apparels.com/behind-sultan-apparels",
   },
 
   category: "business",

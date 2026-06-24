@@ -128,10 +128,10 @@ export default function MarketInsightsPage() {
         </section>
 
         {/* --- 3. Strategy Grid (Dark Mode) --- */}
-        <section className="strategy-section py-24 bg-neutral-950 text-white">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="mb-16 border-b border-neutral-800 pb-8">
-              <span className="text-xs font-bold tracking-[0.2em] uppercase text-neutral-400">
+        <section className="strategy-section py-24 bg-secondary-foreground text-primary">
+          <div className="container mx-auto">
+            <div className="mb-16 border-b border-primary pb-8">
+              <span className="text-xs font-bold tracking-[0.2em] uppercase text-white">
                 Active Research
               </span>
               <h3 className="text-3xl md:text-4xl font-bold mt-4">
@@ -143,13 +143,13 @@ export default function MarketInsightsPage() {
               {marketInsightsContent.strategy.points.map((item, idx) => (
                 <div 
                   key={idx} 
-                  className="strategy-card group p-8 bg-neutral-900 border border-neutral-800 hover:border-white transition-colors duration-500"
+                  className="strategy-card group p-8 bg-white border border-white hover:border-primary transition-colors duration-500"
                 >
-                  <div className="mb-6 text-neutral-400 group-hover:text-white transition-colors duration-300">
+                  <div className="mb-6   transition-colors duration-300">
                     <item.icon size={32} strokeWidth={1.5} />
                   </div>
                   <h4 className="text-xl font-bold mb-4">{item.title}</h4>
-                  <p className="text-neutral-400 font-light leading-relaxed text-sm">
+                  <p className="text-black font-light leading-relaxed text-sm">
                     {item.text}
                   </p>
                 </div>

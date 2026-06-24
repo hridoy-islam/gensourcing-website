@@ -65,8 +65,8 @@ export default function PortfolioGallery() {
                   relative px-6 py-3 text-sm font-medium tracking-wide uppercase transition-all duration-300 border
                   ${
                     activeTab === cat.id
-                      ? "bg-black text-white border-black"
-                      : "bg-white text-neutral-500 border-neutral-200 hover:border-black hover:text-black"
+                      ? "bg-primary text-white border-primary"
+                      : "bg-white text-neutral-500 border-neutral-200 hover:border-primary hover:text-primary"
                   }
                 `}
               >

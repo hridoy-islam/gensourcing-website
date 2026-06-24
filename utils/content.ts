@@ -3,8 +3,8 @@ import { Megaphone, Code, Paintbrush, CheckCircle2 } from "lucide-react";
 export const homeContent = {
   hero: {
     title: "Seamless Apparel Network",
-    subtitle: "Seamless Apparel Network",
-    buttonText: "Explore",
+    subtitle: "Your Global Sourcing Partner",
+    buttonText: "Explore Network",
     buttonHref: "/our-story",
     video:
       "https://www.youtube.com/embed/EL4DMSpAYMA?autoplay=1&mute=1&loop=1&playlist=EL4DMSpAYMA&controls=0&showinfo=0&modestbranding=1",
@@ -13,64 +13,64 @@ export const homeContent = {
     pretitle: "Global Reach, Local Expertise",
     title: "Sultan Apparels Ltd.",
     description:
-      "Sultan Apparels Ltd. is a UK-registered apparel sourcing company based in Milton Keynes — a dynamic business hub less than an hour north of London. Our dual presence — with client teams in the UK and technical experts on the ground in Bangladesh — ensures close production oversight, clear communication, and high-quality results. We offer end-to-end sourcing solutions, including product development, compliance, logistics, shipping, and multi-stage quality control.",
+      "Sultan Apparels Ltd. is a UK-registered apparel sourcing firm headquartered in Milton Keynes—a dynamic business hub situated just north of London. Our strategic dual presence features customer-facing management teams in the UK working alongside dedicated technical specialists on the ground in Bangladesh. This model guarantees meticulous production oversight, streamlined communication, and superior quality control. We deliver comprehensive, end-to-end supply chain solutions spanning product development, compliance auditing, logistics, and multi-stage quality assurance.",
     buttonText: "Our Story",
     buttonHref: "/about",
     image: "/intro.jpeg",
   },
   highlights: {
-    title: "Why Choose Sultan Apparels",
+    title: "Why Partner with Sultan Apparels",
     description:
-      "With Sultan Apparels, you get more than a supplier — you gain a reliable partner dedicated to helping you grow, reduce costs, and bring products to market faster and smarter.",
+      "Partnering with Sultan Apparels means gaining a dedicated strategic ally. We focus on scaling your business, optimizing manufacturing costs, and accelerating your time-to-market with smart, transparent solutions.",
     stats: [
       { label: "Trusted Factories", value: "73+" },
-      { label: "Ethical Sourcing Partner", value: "100%" },
-      { label: "Fast Sampling & Delivery", value: "100%" },
-      { label: "Transparent Operations", value: "100%" },
+      { label: "Ethical Sourcing Assurance", value: "100%" },
+      { label: "On-Time Sampling & Delivery", value: "100%" },
+      { label: "Operational Transparency", value: "100%" },
     ],
     image: "/highlights-factory.jpg",
   },
   mission: {
     title: "Our Commitment",
     description:
-      "To revolutionize global apparel sourcing through smarter strategies and ethical partnerships — where integrity drives every decision, quality defines every product, and transparency shapes every relationship. We are committed to building a supply chain that not only delivers, but inspires trust and sets new standards for responsibility in fashion.",
+      "To redefine global apparel sourcing through optimized procurement strategies and ethical manufacturer alliances. Integrity guides our business decisions, quality defines our products, and absolute transparency builds our client relationships. We are committed to establishing a reliable supply chain that inspires trust and elevates responsible practices across the fashion industry.",
     buttonText: "Contact Us",
     buttonHref: "/get-in-touch",
     image: "/home2.jpg",
   },
   deliveryProcess: {
     title: "How We Deliver",
-    subtitle: "End-to-end management from concept to carton.",
+    subtitle: "End-to-end supply chain management from initial concept to final delivery.",
     features: [
       {
         title: "Market Insight",
-        description: "Trend analysis and cost-effective sourcing strategies.",
+        description: "In-depth trend analysis coupled with cost-efficient sourcing strategies.",
       },
       {
         title: "Partner Network",
-        description: "Access to 73+ vetted factories across key global hubs.",
+        description: "Direct access to over 73 fully vetted factories across premier manufacturing hubs.",
       },
       {
         title: "Global Logistics",
-        description: "Seamless shipping and supply chain management.",
+        description: "Seamless freight coordination and end-to-end supply chain optimization.",
       },
       {
         title: "Responsible Standards",
-        description: "Strict adherence to ethical and compliance protocols.",
+        description: "Rigorous adherence to international ethical labor and social compliance protocols.",
       },
       {
-        title: "Quality And Innovation",
-        description: " rigorous QC and material innovation.",
+        title: "Quality & Innovation",
+        description: "Exhaustive multi-tier quality control inspections and advanced material innovation.",
       },
     ],
     image: "/home1.jpg",
   },
   about: {
-    title: "Behind The Sultan Apparels",
+    title: "Behind Sultan Apparels",
     description:
-      "Led by founders who have lived every side of fashion, we turn intent into garments with craft, care, and absolute discretion. From boutique runs to fully compliant factories supplying premium high-street and heritage brands across Europe and North America, our leadership brings a decade+ of cross-functional expertise—design, sourcing, retail, e-commerce, logistics, finance, and compliance.",
+      "Led by founders with deep, first-hand expertise in every sector of the fashion supply chain, we translate design concepts into premium garments with exceptional craftsmanship and absolute discretion. From handling low-minimum boutique collections to managing fully compliant facilities that supply legacy heritage brands across Europe and North America, our leadership brings over a decade of cross-functional experience across design, sourcing, retail, e-commerce, logistics, finance, and legal compliance.",
     description2:
-      "As a former BGMEA Director and active members of BGMEA and BKMEA, we champion ethical production and policy progress while protecting every idea under strict NDAs. We translate vision into precise CADs, smart material choices, and rigorous prototypes—moving to bulk only when the details sing.",
+      "As a former BGMEA Director and active members of both the BGMEA and BKMEA, we proudly champion ethical production and policy progress while safeguarding intellectual property under strict NDAs. We convert your creative vision into precise CAD technical packages, smart textile formulations, and rigorous prototypes—commencing bulk production only when every specification is flawlessly met.",
     buttonText: "Meet The Team",
     buttonHref: "/about",
     image: "/home1.jpg",
@@ -78,20 +78,20 @@ export const homeContent = {
   portfolio: {
     title: "Sourcing Portfolio",
     description:
-      "We specialize in sourcing high-quality garments from trusted manufacturers, ensuring competitive prices and timely delivery. Our portfolio highlights a wide range of apparel categories tailored to global fashion needs.",
+      "We specialize in manufacturing high-quality apparel through verified global facilities, offering competitive pricing structures and dependable lead times. Our extensive portfolio spans diverse product categories tailored to contemporary global markets.",
     buttonText: "Explore Portfolio",
-    buttonHref: "/portfolio",
+    buttonHref: "/sourcing-portfolio",
     image: "/portfolio-collage.jpg",
   },
   contactSection: {
     title: "Ready to get started?",
     form: {
       placeholders: {
-        name: "Name",
-        email: "Email",
+        name: "Full Name",
+        email: "Business Email",
         phone: "Phone Number",
-        service: "Interested In (e.g. Sourcing, Logistics)",
-        message: "Your Message",
+        service: "Primary Requirement (e.g., Sourcing, Logistics)",
+        message: "Describe your project requirements",
       },
       services: [
         "Apparel Sourcing",
@@ -105,10 +105,10 @@ export const homeContent = {
     info: {
       title: "Let's Build Your Collection",
       description:
-        "Ready to build your brand? You are just one step away to experience the progress. Get in touch with us for a consultation.",
+        "Ready to scale your production? Partner with us to experience streamlined supply chain management. Contact our team today to schedule a formal consultation.",
       addressTitle: "Headquarters",
-      address: "100 Avebury Boulevard, Milton Keynes, MK9 1FH, United Kingdom",
-      email: "team@gensourcing.co.uk",
+      address: "9Town Quay Wharf, Abbey Road, Barking, IG11 7BZ",
+      email: "info@sultan-apparels.co.uk",
     },
   },
 };
@@ -117,13 +117,13 @@ export const ourStoryContent = {
   hero: {
     title: "Our Story",
     subtitle:
-      "Connecting Global Buyers with Trusted Manufacturers Across Asia & Africa — Built on Transparency, Quality, and Ethical Partnerships.",
+      "Connecting global buyers with verified manufacturing facilities across Asia and Africa—anchored in transparency, quality, and ethical partnerships.",
   },
 
   companyIntro: {
-    title: "Sultan Apparels Ltd",
+    title: "Sultan Apparels Ltd.",
     description:
-      "At Sultan Apparels Ltd, we connect international buyers with a carefully curated network of reliable manufacturers across Bangladesh, India, China, Cambodia, Ethiopia, and beyond. Our sourcing portfolio ranges from fully audited, ethically compliant factories certified by BSCI, WRAP, SEDEX, and OEKO-TEX to agile small-scale units capable of handling low MOQs and bespoke production requirements.\n\nWith operational bases in both the UK and Dhaka, Bangladesh, our founding team and technical specialists maintain direct oversight at every stage of production — ensuring compliance, consistency, and uncompromising quality.\n\nOur capabilities span the full spectrum of apparel categories including T-shirts, polos, shirts, hoodies, jackets, denim, trousers, lingerie, socks, caps, activewear, and more. Supported by trusted partners in yarn spinning, dyeing, printing, washing, and finishing, we manage complex, end-to-end production with precision.\n\nBeyond manufacturing, we deliver a complete sourcing solution — product development, prototyping, sampling, packaging, logistics, shipping, warehousing, and independent quality control inspections. Buyers never pay a service fee. We operate transparently through direct agreements with manufacturers, ensuring fairness, clarity, and negotiable terms.",
+      "At Sultan Apparels Ltd., we bridge the gap between international fashion brands and a rigorously audited network of established manufacturers across Bangladesh, India, China, Cambodia, Ethiopia, and other key manufacturing zones. Our extensive network balances large-scale factories certified by global bodies like BSCI, WRAP, SEDEX, and OEKO-TEX alongside specialized, agile facilities structured to manage boutique volumes and strict low-MOQ requests.\n\nOperating from co-headquarters in both the UK and Dhaka, Bangladesh, our leadership team and technical experts maintain direct on-site management at every production stage. This dual-presence infrastructure ensures complete compliance, absolute consistency, and flawless quality.\n\nOur manufacturing capabilities cover comprehensive apparel categories, including basic tees, custom polos, formal shirts, heavyweight hoodies, structured jackets, denim collections, tailored trousers, fine lingerie, hosiery, headwear, and high-performance activewear. Backed by long-term partners in yarn spinning, advanced dyeing facilities, precision printing, and specialized wash houses, we orchestrate complex garment operations seamlessly.\n\nBeyond production, we deliver an inclusive supply chain suite: product engineering, prototype sampling, packaging architecture, freight logistics, warehousing solutions, and independent third-party quality inspections. We operate on direct transparency contracts with our factories; clients pay no hidden agency premiums, ensuring equitable negotiations and honest market pricing.",
     buttonText: "View Sourcing Portfolio",
     buttonHref: "/sourcing-portfolio",
     image: "/s1.jpg",
@@ -134,14 +134,14 @@ export const ourStoryContent = {
     title: "Reliable Manufacturing. Ethical Standards. Seamless Delivery.",
     items: [
       {
-        heading: "Trendy Designs & Quality Inspection",
+        heading: "Trend-Driven Design & Structural Quality Auditing",
         description:
-          "From product development to final inspection, we ensure every garment meets strict quality benchmarks and global compliance standards.",
+          "From original pattern development to pre-shipment inspections, we enforce rigorous quality metrics and international compliance benchmarks across all production lines.",
       },
       {
-        heading: "Fast Delivery & Great Service",
+        heading: "Accelerated Lead Times & High-Touch Service",
         description:
-          "With teams in the UK and Bangladesh and regular factory visits across Asia and Africa, we provide hands-on oversight, faster turnaround, and dependable communication.",
+          "Leveraging localized regional offices in the UK and Bangladesh along with persistent on-site factory visits, we guarantee transparent communication and reliable turnaround windows.",
       },
     ],
     buttonText: "Partner With Us",
@@ -154,22 +154,19 @@ export const ourStoryContent = {
     title: "Built on Integrity, Driven by Responsibility",
     items: [
       {
-        // icon: CheckCircle2,
         title: "Our Mission",
         description:
-          "To transform global apparel sourcing through smarter strategies, ethical partnerships, and uncompromising standards. Every decision is guided by integrity, every product by quality, and every relationship by transparency.",
+          "To redefine global apparel supply chains through data-backed procurement, ethical manufacturing alliances, and unyielding product benchmarks. Every operational decision is dictated by integrity, quality, and corporate transparency.",
       },
       {
-        // icon: CheckCircle2,
         title: "Our Vision",
         description:
-          "To be the most trusted apparel sourcing partner in the UK, Australia, and beyond — connecting buyers with reliable manufacturing networks across Asia and Africa while leading the industry in sustainability, compliance, and innovation.",
+          "To establish our position as the premier, trusted apparel sourcing firm across the United Kingdom, Australia, and broader international markets, leading the industry toward a sustainable, compliant, and innovative future.",
       },
       {
-        // icon: CheckCircle2,
         title: "Our Commitment",
         description:
-          "We build supply chains that are faster, fairer, and future-ready — enabling brands to scale confidently through long-term, sustainable sourcing partnerships.",
+          "We engineer highly responsive, ethical, and modern supply networks—empowering corporate brands to scale reliably through strategic, sustainable manufacturing partnerships.",
       },
     ],
     image: "/s3.jpg",
@@ -180,65 +177,60 @@ export const partnerWithUsContent = {
   hero: {
     title: "Partner With Us",
     subtitle:
-      "Join Sultan Apparels’s Global Manufacturing Network — Built on Transparency, Compliance, and Long-Term Growth.",
+      "Integrate into Sultan Apparels’ Global Manufacturing Network—Built on Transparency, Strict Compliance, and Long-Term Scale.",
   },
 
   partnership: {
     pretitle: "GLOBAL MANUFACTURING NETWORK",
     title: "Grow With a Trusted International Sourcing Partner",
     description:
-      "At Sultan Apparels Ltd, we are always looking to collaborate with committed, quality-driven apparel manufacturers who share our values of transparency, compliance, and operational excellence.\n\nWhether you operate a large-scale, internationally certified factory or a specialized unit catering to low MOQs, we connect our partners with premium international buyers across the UK, Australia, Europe, and other key global markets.\n\nThrough our dual presence — with client teams in the UK and technical experts on the ground in Bangladesh — we ensure clear communication, hands-on production oversight, and sustainable long-term partnerships. We don’t just source products — we build trusted relationships that create mutual growth.",
+      "At Sultan Apparels Ltd., we actively seek long-term strategic relationships with compliant, quality-focused garment manufacturers who prioritize operational excellence and fair labor practices.\n\nWhether you operate an enterprise-level, multi-certified apparel plant or a high-end technical workshop geared toward specialized low MOQs, we connect our manufacturing partners with leading retail brands across the United Kingdom, Europe, Australia, and North America.\n\nOur distinct dual infrastructure—utilizing corporate account managers in the UK alongside specialized technical inspectors on-site in production regions—facilitates flawless communication and transparent quality control. We do not look for simple transactional suppliers; we build enduring alliances centered on shared commercial success.",
 
-    requirementsTitle: "What We Look For",
+    requirementsTitle: "Supplier Evaluation Criteria",
     requirements: [
-      "Proven track record in apparel manufacturing",
-      "Compliance with ethical and labor standards (BSCI, WRAP, SEDEX, OEKO-TEX, GOTS or equivalent)",
-      "Strong internal quality control systems",
-      "Reliable on-time delivery performance",
-      "Flexibility in order volumes (low MOQs to bulk production)",
-      "Transparent communication and fair pricing practices",
+      "A documented, verified history of excellence in apparel production.",
+      "Valid, active social and environmental compliance certifications (e.g., BSCI, WRAP, SEDEX, OEKO-TEX, GOTS, or equivalent).",
+      "Robust internal Quality Assurance (QA) and Quality Control (QC) protocols.",
+      "A proven track record of meeting strict on-time delivery deadlines.",
+      "Adaptability across manufacturing volumes, balancing flexible MOQs with heavy bulk runs.",
+      "Commitment to transparent business communication and highly competitive, fair pricing models.",
     ],
 
     closingText:
-      "If you meet the above standards and are interested in growing with us, we would love to hear from you. Let’s build something great — together.",
+      "If your facility operates at these standards and you are focused on diversifying your global client portfolio, we invite you to begin the vendor application process with us.",
 
-    contactEmail: "team@gensourcing.co.uk",
-    buttonText: "Email Us",
-    buttonHref: "mailto:team@gensourcing.co.uk",
+    contactEmail: "info@sultan-apparels.co.uk",
+    buttonText: "Submit Vendor Profile",
+    buttonHref: "mailto:info@sultan-apparels.co.uk",
 
     image: "/partner.jpg",
   },
 };
 
-
 export const getInTouchContent = {
   hero: {
     title: "Get In Touch",
-    subtitle:
-      "Let’s Build Something That Lasts",
+    subtitle: "Let’s build a resilient supply chain together.",
   },
-
-  
 };
+
 export const behindGenContent = {
   hero: {
-    title: "Behind Gen",
+    title: "Sultan Apparels",
     subtitle:
-      "Threads of Talent, Woven with Purpose — The People, Experience, and Principles Powering Sultan Apparels.",
+      "The people, industry experience, and ethical principles driving Sultan Apparels forward.",
   },
 
   sectionOne: {
-    title: "Threads of Talent, Woven with Purpose",
+    title: "Technical Artistry, Woven with Purpose",
     description: `
-At Sultan Apparels, we turn ideas into production-ready garments through a refined, collaborative development process that blends creativity with technical expertise.
+At Sultan Apparels, we transform raw concepts into shelf-ready, market-viable garments through a structured, highly collaborative technical development process that balances creative aesthetics with commercial feasibility.
 
-Our team works closely with clients to understand design intent, product functionality, key tolerances, and critical features — while offering clear guidance on production feasibility through technical insight and visual interpretation.
+Our engineering team works hand-in-hand with clients to dissect design architecture, textile performance specs, grading tolerances, and critical finish details. We provide actionable manufacturing feedback, ensuring optimal production efficiency while preserving artistic intent.
 
-We translate concepts into precise CADs, select the right materials and production techniques, and develop prototypes for detailed evaluation. Only after full client approval do we proceed to final sampling and bulk production.
+We convert sketches into precise CAD technical packs, source exact yarn compositions, and generate initial proto-samples for thorough review. Production only transitions to bulk manufacturing upon explicit, verified client sign-off.
 
-To protect intellectual property, all partners operate under strict NDAs. Any misuse, unauthorized display, or reproduction of designs results in immediate disqualification and direct client notification.
-
-With confidentiality, precision, and market alignment at the forefront, we provide a secure and seamless journey from concept to finished product.
+To insulate your proprietary concepts and market strategies, all supply chain partners operate under strict, legally binding Non-Disclosure Agreements (NDAs). Any breach of confidentiality results in immediate partner termination and proactive legal remedy. This rigorous methodology guarantees a safe, secure, and precise path from design board to retail floor.
     `,
     image: "/b1.jpeg",
   },
@@ -246,49 +238,45 @@ With confidentiality, precision, and market alignment at the forefront, we provi
   sectionTwo: {
     title: "Experience That Shapes Every Decision",
     description: `
-Our founders bring over a decade of cross-functional expertise within the global apparel and fashion ecosystem.
+Our executive founders bring over a decade of deep, multi-disciplinary experience harvested directly from the global textile and fashion manufacturing sectors.
 
-From managing boutique production units to scaling fully compliant factories supplying premium high-street and heritage brands across Europe and North America, we have operated at every level of the industry.
+Our leadership has actively managed operations at every industry tier—from establishing boutique production houses to directing enterprise-level, highly compliant manufacturing centers that supply premier high-street and heritage collections throughout Europe and North America.
 
-Our experience extends beyond manufacturing — encompassing global trade, fashion retail, e-commerce, logistics, finance, legal compliance, education ventures, and social impact initiatives.
+This executive background stretches far beyond basic procurement. It integrates comprehensive mastery over international trade mechanics, retail operations, multi-channel e-commerce infrastructure, global freight logistics, fiscal management, legal compliance frameworks, and corporate social responsibility (CSR) mandates.
 
-This diverse foundation enables us to support clients not only in sourcing, but also in product development, market positioning, cost optimisation, and long-term supply chain resilience.
+This multifaceted foundation allows us to serve clients not simply as traditional brokers, but as comprehensive supply chain architects capable of driving cost optimization, product positioning, and structural resilience.
     `,
     image: "/b2.webp",
   },
 
   sectionThree: {
-    title: "Leadership, Influence & Global Perspective",
+    title: "Leadership, Influence & Global Fluency",
     description: `
-We have proudly held influential roles within the apparel industry — including serving as a former Director of the Bangladesh Garment Manufacturers and Exporters Association (BGMEA). We remain active members of both BGMEA and the Bangladesh Knitwear Manufacturers and Exporters Association (BKMEA).
+We have consistently held prominent advisory positions within leading industrial bodies, including serving as a former Director of the Bangladesh Garment Manufacturers and Exporters Association (BGMEA). We maintain continuous active memberships in both the BGMEA and the Bangladesh Knitwear Manufacturers and Exporters Association (BKMEA).
 
-Our involvement in policy dialogue and ethical sourcing frameworks reflects our long-term commitment to responsible production and compliance leadership.
+Our long-term involvement in high-level policy formulation and ethical sourcing frameworks underscores our dedication to leading the sector in compliance, worker welfare, and ecological sustainability.
 
-Through extensive travel and strong networks across Asia, Europe, Africa, and North America, we bring more than commercial and technical expertise — we bring global fluency.
-
-We understand the language of both buyers and manufacturers, along with the cultural nuances that define successful international partnerships. This perspective enables us to operate confidently and respectfully across markets.
+Backed by global travel and active professional relationships cutting across Asia, Europe, Africa, and North America, our leadership team commands a high level of global fluency. We effortlessly bridge the operational gap between Western retail boards and manufacturing technicians on the factory floor, respecting cultural values while enforcing demanding Western quality expectations.
     `,
     image: "/b3.jpg",
   },
 
   sectionFour: {
-    title: "More Than a Service — A Values-Driven Partnership",
+    title: "A Purpose-Driven Commercial Alliance",
     description: `
-At Sultan Apparels, you are not simply engaging a sourcing service — you are partnering with a globally connected, values-driven team committed to building a more ethical, agile, and efficient fashion supply chain.
+Engaging Sultan Apparels means moving away from typical, transactional broker services. You are securing an alliance with a globally integrated, values-led management team focused on engineering an ethical, responsive, and data-driven fashion supply chain.
 
-United by purpose, guided by experience, and driven by excellence, we are determined to establish Sultan Apparels as one of the most respected and ethically focused apparel sourcing companies in the industry.
+Bound by clear values and driven by execution, we are focused on positioning Sultan Apparels as a trusted name in responsible, client-aligned clothing procurement.
 
-With integrity at our core and quality as our benchmark, we are setting new standards for responsible business in global fashion.
-
-The result is a team that understands sourcing not only in theory, but through lived experience. With Sultan Apparels, you gain more than a service provider — you gain a principled, forward-thinking partner deeply invested in your long-term success.
+By maintaining unyielding quality standards and absolute business integrity, we are proving that responsible practices and profitable commercial operations go hand-in-hand. When you choose Sultan Apparels, you gain an expert, future-focused partner entirely committed to your sustainable brand growth.
     `,
     image: "/b4.jpg",
   },
 
   teamSection: {
-    title: "Threads of Talent, Woven Together",
+    title: "Our Leadership Team",
     subtitle:
-      "A globally connected leadership team bringing expertise from the UK, Bangladesh, and Australia.",
+      "A globally connected executive team directing operations from the UK, Bangladesh, and Australia.",
 
     members: [
       {
@@ -342,23 +330,24 @@ The result is a team that understands sourcing not only in theory, but through l
     ],
   },
 };
+
 export const sourcingData = {
   hero: {
     title: "Sourcing Portfolio",
     subtitle:
-      "Threads of Talent, Woven with Purpose — The People, Experience, and Principles Powering Sultan Apparels.",
+      "A curated display of our manufacturing capabilities, technical precision, and diverse apparel classifications.",
   },
 
   singleSection: {
-    title: "Our Global Buyer Network",
+    title: "Our Global Client Experience Network",
     description: `
-At Sultan Apparels, our approach is shaped by the experience within our founding group, built through long-term involvement in global sourcing, manufacturing, and apparel production. This background gives us a clear understanding of what international buyers expect — reliable timelines, transparent communication, and consistent product quality.
+At Sultan Apparels, our operational strategies are deeply informed by the structural manufacturing backgrounds of our founding team. Having managed high-volume international textile factories, we possess direct insights into the precise demands of global retail buyers: non-negotiable timelines, absolute visibility, and strict structural quality metrics.
 
-We carry these proven practices into everything we do. Our sourcing model is built on precision, ethical manufacturing, and structured quality control, ensuring each project meets the standards of fast-moving global markets. From product development to final delivery, we focus on clarity, dependability, and smooth execution.
+We embed these rigorous manufacturing standards into every project we manage. Our modern sourcing model relies on automated progress mapping, audited ethical manufacturing channels, and deep quality assurance matrices, ensuring our outputs meet the quick turns of modern retail markets.
 
-Experience within our founding group also includes involvement in projects connected to well-known international retailers across the UK, EU, USA, Canada, and Australia — including Zara, H&M, Primark, Matalan, Tesco (F&F), ASDA George, American Eagle, Gap, Adidas, and more.
+The professional pedigree of our founding group includes extensive past project management and production delivery connected to marquee retail brands throughout the UK, European Union, United States, Canada, and Australia—such as Zara, H&M, Primark, Matalan, Tesco (F&F), ASDA George, American Eagle, Gap, Adidas, and others.
 
-Here is a selection of brands connected to the industry experience within our founding group.
+The following index displays product categories aligned with the manufacturing experience and historic supply chains engineered by our founders.
     `,
   },
 
@@ -366,7 +355,7 @@ Here is a selection of brands connected to the industry experience within our fo
     categories: [
       {
         id: "tees",
-        label: "Tees",
+        label: "T-Shirts & Basics",
         images: [
           "/Tees-F1.1.jpg",
           "/Tees-F1.2.jpg",
@@ -377,7 +366,7 @@ Here is a selection of brands connected to the industry experience within our fo
       },
       {
         id: "polos",
-        label: "Polos",
+        label: "Polo Shirts",
         images: [
           "/Polo-F1.jpg",
           "/Polo-F2.2.jpg",
@@ -388,7 +377,7 @@ Here is a selection of brands connected to the industry experience within our fo
       },
       {
         id: "denims",
-        label: "Denims",
+        label: "Denim & Jeanswear",
         images: [
           "/Denim-F1.1.jpg",
           "/Denim-F1.3.jpg",
@@ -399,7 +388,7 @@ Here is a selection of brands connected to the industry experience within our fo
       },
       {
         id: "activewears",
-        label: "Activewears",
+        label: "Performance Activewear",
         images: [
           "/Activewear-F1.1.jpg",
           "/Activewear-F1.2.jpg",
@@ -410,7 +399,7 @@ Here is a selection of brands connected to the industry experience within our fo
       },
       {
         id: "hoodies",
-        label: "Hoodies",
+        label: "Sweatshirts & Hoodies",
         images: [
           "/Hoodie-F1.1.jpg",
           "/Hoodie-F1.2.jpg",
@@ -421,7 +410,7 @@ Here is a selection of brands connected to the industry experience within our fo
       },
       {
         id: "outerwears",
-        label: "Outerwears",
+        label: "Coats & Outerwear",
         images: [
           "/Outerwear-F1.1.jpg",
           "/Outerwear-F1.3.jpg",
@@ -432,7 +421,7 @@ Here is a selection of brands connected to the industry experience within our fo
       },
       {
         id: "shirts",
-        label: "Shirts",
+        label: "Casual & Formal Shirts",
         images: [
           "/Shirt-F1.1.jpg",
           "/Shirt-F2.1-2.jpg",
@@ -444,7 +433,7 @@ Here is a selection of brands connected to the industry experience within our fo
       },
       {
         id: "trousers",
-        label: "Trousers",
+        label: "Pants & Trousers",
         images: [
           "/Trouser-F1.1.jpg",
           "/Trouser-F1.2.jpg",
@@ -455,7 +444,7 @@ Here is a selection of brands connected to the industry experience within our fo
       },
       {
         id: "essentials",
-        label: "Essentials",
+        label: "Underwear & Essentials",
         images: [
           "/Essential-F1.2.jpg",
           "/Essential-F1.3.jpg",
@@ -467,7 +456,7 @@ Here is a selection of brands connected to the industry experience within our fo
       },
       {
         id: "kidswear",
-        label: "Kidswear",
+        label: "Childrenswear",
         images: [
           "/Accessories-F1.2.jpg",
           "/Accessories-F1.1.jpg",
@@ -479,16 +468,13 @@ Here is a selection of brands connected to the industry experience within our fo
       },
       {
         id: "accessories",
-        label: "Accessories",
+        label: "Fashion Accessories",
         images: [
           "/Accessories-F1.1-1.jpg",
-
           "/Accessories-F1.3-1.jpg",
           "/Accessories-F1.4-1.jpg",
-
           "/Accessories-F2-1.jpg",
           "/Accessories-F2.1-1.jpg",
-
           "/Accessories-F2.3-1.jpg",
         ],
       },
@@ -496,102 +482,95 @@ Here is a selection of brands connected to the industry experience within our fo
   },
 };
 
-// =======================
-// ABOUT PAGE CONTENT
-// =======================
 export const aboutContent = {
   hero: {
-    title: "About Us",
+    title: "About Sultan Apparels",
     subtitle:
-      "Empowering Your Digital Realm: Crafting Inspiring Web Solutions, Unveiling Stunning Designs, and Elevating Global Business Visibility!",
+      "A premier UK-based apparel sourcing agency connecting international retailers with ethically certified manufacturers across Asia and Africa.",
   },
   companyIntro: {
-    title: "The Cyberpeers Company",
+    title: "Sultan Apparels Ltd.",
     description:
-      "Welcome to Cyberpeers, your digital partner for innovative solutions and creative design. Based in the heart of London, we are a dynamic force in the realm of digital marketing. From expertly crafted e-commerce solutions to bespoke custom designs that capture your brand’s essence, captivating landing pages that leave a lasting impact, and visionary graphic and logo designs.",
-    buttonText: "Check Our Services",
-    buttonHref: "/services",
-    image: "/hero-1.jpg",
+      "Sultan Apparels Ltd. is a UK-registered garment sourcing agency headquartered in Milton Keynes. Our operational dynamic combines customer success directors in the UK with dedicated production engineers and technical inspectors stationed permanently in Bangladesh. This integrated network provides clear brand communication, complete manufacturing transparency, and strict product auditing. We engineer end-to-end production runs encompassing technical development, international compliance verification, logistics execution, and custom quality assurance sweeps.",
+    buttonText: "Our Story",
+    buttonHref: "/our-story",
+    image: "/intro.jpeg",
   },
   ctaStrategies: {
-    pretitle: "GET CONSULTATIONS",
-    title: "Strategies For Businesses Like Yours",
+    pretitle: "OUR APPROACH",
+    title: "Sourcing Strategies Built for Global Scale",
     items: [
       {
-        heading: "Take control of your online success",
+        heading: "Comprehensive Supply Chain Orchestration",
         description:
-          "Stop guessing and start succeeding with our data-driven services transform your website into a success story.",
+          "From original technical drawings and prototyping cycles to final random styling audits and deep sea freight management, we drive efficiency across every link of your supply line.",
       },
       {
-        heading: "Achieve your online goals with us.",
+        heading: "Ethical & Compliant Factory Alliances",
         description:
-          "Don't let your website get lost in the SERP shuffle. Experience the difference of working with professionals.",
+          "Every production facility inside our network is continually vetted for transparent wage structures, safe labor conditions, and alignment with global standards like BSCI, WRAP, SEDEX, and OEKO-TEX.",
       },
     ],
-    buttonText: "Contact Us",
-    buttonHref: "/get-in-touch",
+    buttonText: "Partner With Us",
+    buttonHref: "/partner-with-us",
     image: "/about1.jpg",
   },
   teamFeatures: {
     pretitle: "Who We Are",
-    title: "We Are A Professional And Experienced Team",
+    title: "Proven Leadership in International Apparel Procurement",
     items: [
       {
         icon: CheckCircle2,
-        title: "Company mission",
+        title: "Our Mission",
         description:
-          "Elevating businesses through innovative digital solutions and strategic marketing expertise.",
+          "To transform global apparel sourcing via modern tracking technologies, fair vendor partnerships, and exacting product standards, placing corporate integrity at the core of every collection.",
       },
       {
         icon: CheckCircle2,
-        title: "Company vision",
+        title: "Our Vision",
         description:
-          "Empowering businesses with cutting-edge digital solutions to foster growth, innovation, and global impact.",
+          "To stand as the leading, most reliable garment procurement agency in Europe and Oceania—linking retail networks to verified, efficient manufacturing hubs across developing corridors.",
       },
       {
         icon: CheckCircle2,
-        title: "Best Features",
+        title: "Our Commitment",
         description:
-          "Empowering Brands with Innovative Web Solutions. Tailored Branding, Seamless E-commerce, Striking Visuals, and Cutting-Edge Technology.",
+          "We construct supply frameworks that are responsive, fair, and future-proof—giving brands the operational foundation required to expand market share safely.",
       },
     ],
   },
 };
 
-// =======================
-// SERVICES PAGE CONTENT
-// =======================
 export const servicesContent = {
   hero: {
     title: "Our Services",
     subtitle:
-      "We are a self-motivated digital IT enterprise specializing in web development, design, and branding your digital footprint. Our focus is on inspiring online presence and maximizing global business visibility.",
+      "Comprehensive garment sourcing services encompassing technical engineering, rigorous compliance monitoring, and worldwide logistics coordination.",
   },
-  // Used for mapping to specific sections
   sections: [
     {
-      id: "digital-marketing",
+      id: "sourcing",
       iconId: "marketing",
-      title: "DIGITAL MARKETING",
+      title: "APPAREL SOURCING",
       description1:
-        "We are a self-motivated digital IT enterprise specializing in web development, design, and branding your digital footprint.",
+        "We place international fashion brands into verified, highly efficient production corridors across Bangladesh, India, China, Cambodia, Ethiopia, and additional key export sectors.",
       description2:
-        "With our services, rest assured that your brand will secure higher search engine rankings, resulting in heightened visibility. Amplifying your target audience, embrace the opportunity to enhance your brand's reach and impact.",
+        "Our manufacturing matrix spans vertically integrated industrial plants carrying top compliance certifications (BSCI, WRAP, SEDEX, OEKO-TEX) down to smaller specialized ateliers optimized for exclusive premium capsules and fast-turn low MOQs.",
       lists: [
         [
-          "Advanced 3A & DTM Setup Services",
-          "SEO Services",
-          "Local SEO Services",
-          "Ecommerce SEO Services",
+          "T-Shirts & Premium Polos",
+          "Sweatshirts & Heavy Hoodies",
+          "Denims & Rigid Trousers",
+          "Performance & Activewear",
         ],
         [
-          "Influencer Marketing",
-          "Branding & Identity Marketing",
-          "Mobile Marketing",
-          "Lead Generation Services",
+          "Woven Shirts & Blouses",
+          "Fine Knitwear & Outerwear",
+          "Intimate Apparel & Hosiery",
+          "Headwear & Textile Accessories",
         ],
       ],
-      buttonText: "Schedule a Call",
+      buttonText: "Explore Sourcing Categories",
       image: "/service1.jpg",
       imagePosition: "right",
       bgColor: "light",
@@ -599,39 +578,41 @@ export const servicesContent = {
     {
       id: "development",
       iconId: "development",
-      title: "DEVELOPMENT",
+      title: "PRODUCT DEVELOPMENT",
       description1:
-        "Welcome to our digital haven, where innovation thrives and possibilities are limitless! Delve into a world of tailored online solutions.",
+        "Our specialized design technicians transform raw mood boards into manufacturing-ready technical files using precise digital geometry, material optimization, and rapid prototyping matrices.",
       description2:
-        "Discover our expertise in optimizing mobile solutions and empowering seamless content management, propelling your business towards new horizons.",
+        "We convert creative concepts into detailed tech-packs, analyze fiber stress tolerances, formulate correct fabric weights, and deliver rapid physical samples for client analysis prior to triggering main production lines.",
       lists: [
-        ["Development Technology", "CMS Development", "Custom Development"],
-        ["E-Commerce Development", "Mobile Development"],
+        ["CAD Tech-Pack Construction", "Yarn & Substrate Engineering"],
+        ["Rapid Prototyping & Grading", "Fit Testing & Sample Approvals"],
       ],
-      buttonText: "Let Us Build Your Business",
+      buttonText: "View Production Process",
       image: "/service2.jpg",
       imagePosition: "left",
       bgColor: "dark",
     },
     {
-      id: "design",
+      id: "quality",
       iconId: "design",
-      title: "DESIGN",
+      title: "QUALITY CONTROL & ASSURANCE",
       description1:
-        "Embark on a journey of digital transformation with our dynamic solutions tailored to meet your unique business needs.",
+        "Quality is systematically engineered into the fabrication timeline from day one, rather than simply assessed right before final container loading.",
       description2:
-        "From mesmerizing landing pages to visually engaging graphics and distinctive logo creations, our expertise in template design brings seamless functionality.",
+        "Our multiline QC presence tracks materials from raw greige goods to pressed, packed cartons. Utilizing strict AQL/AOQL statistical protocols, our field staff run regular inline evaluations, critical component testing, and pre-shipment cross-checks.",
       lists: [
         [
-          "Graphic Design",
-          "Custom Logo Design",
-          "Landing Page Design",
-          "CMS Theme / Template Design",
-          "Marketing Collateral",
+          "Raw Fabric & Trim Assay",
+          "In-Line Inline Manufacturing Scans",
+          "Final Random Audits (AQL)",
         ],
-        [],
+        [
+          "100% Core Component Review",
+          "Official Shipment Inspection Certificates",
+          "Third-Party Lab & Audit Alignment",
+        ],
       ],
-      buttonText: "Book A Call",
+      buttonText: "Review Quality Framework",
       image: "/service3.jpg",
       imagePosition: "right",
       bgColor: "light",
@@ -639,88 +620,84 @@ export const servicesContent = {
   ],
   workingProcess: {
     pretitle: "Working Process",
-    title: "Simple Step Follow To Complete Work",
+    title: "How We Deliver: From Concept to Carton",
     steps: [
       {
-        title: "Step 01 Ideation Workshop",
+        title: "01. Market Intelligence",
         description:
-          "Brainstorming innovative ideas between project and development Team collaboration.",
+          "We monitor structural macro trends, fabric development innovations, and raw material pricing indexes to maximize your entry margin.",
       },
       {
-        title: "Step 02 Map Out",
+        title: "02. Factory Allocation",
         description:
-          "Building strategy and road map of entire project agreed by both parties.",
+          "We parse your product specs against our factory database to match your collection with facilities tailored to your volume and technical complexity.",
       },
       {
-        title: "Step 03 Beta Test",
+        title: "03. Prototyping & Sampling",
         description:
-          "End to end testing on a live server to ensure seamless user experience.",
+          "Our pattern makers construct physical fit-samples, adjusting lines and shrinkage allowances for client signature prior to bulk tooling.",
       },
       {
-        title: "Step 04 Rectification and Input",
+        title: "04. Production Management",
         description:
-          "Addressing feedback and incorporating features to meet client's specific needs.",
+          "Local quality engineers execute scheduled inline inspections and stitch checks directly on factory floors throughout the active run.",
       },
       {
-        title: "Step 05 Final Deployment",
+        title: "05. Freight Logistics & Customs",
         description:
-          "Ultimate release and implementation of the completed project approved by client.",
+          "We handle documentation, export customs clearance, shipping container allocation, and final destination logistics for a smooth handover.",
       },
     ],
   },
   faqs: {
     pretitle: "Frequently Asked Questions",
-    title: "FAQs Cyberpeers",
+    title: "Sultan Apparels FAQ",
     image: "/service4.jpg",
     items: [
       {
-        question: "What services does Cyberpeers offer?",
+        question: "What core capabilities does Sultan Apparels maintain?",
         answer:
-          "Cyberpeers is a development and design digital agency focused on providing a wide range of services to branding and enhance business visibility worldwide. Our core services include development of e-commerce solutions, social media, email and digital marketing, custom landing pages, graphic design, logo design, and template design.",
+          "Sultan Apparels provides a turnkey clothing supply solution: including regional factory pairing, CAD tech-pack mapping, prototype development, compliance verification, real-time quality control tracking, and international freight management.",
       },
       {
-        question: "How can Cyberpeers help my business grow online?",
+        question: "What are your primary production regions?",
         answer:
-          "At Cyberpeers, we leverage innovative development and design strategies to elevate your brand’s online presence. Our expertise in e-commerce development ensures seamless online shopping experiences.",
+          "Our verified manufacturing matrix is distributed throughout major global textile hubs, prominently featuring Bangladesh, India, China, Cambodia, and Ethiopia.",
       },
       {
-        question: "What sets Cyberpeers apart from other digital agencies?",
+        question: "What compliance certifications do your allied factories hold?",
         answer:
-          "We take pride in our client-centric approach, delivering tailored solutions to meet your unique business requirements.",
+          "Our manufacturing partner network consists exclusively of facilities carrying validated international certifications, including BSCI, WRAP, SEDEX, OEKO-TEX, and GOTS standards.",
       },
       {
-        question: "Can Cyberpeers help with website maintenance and updates?",
+        question: "Do you manage end-to-end global freight logistics?",
         answer:
-          "Absolutely! Our comprehensive services include website maintenance and updates to ensure your online presence remains fresh.",
+          "Yes. We coordinate complete international freight routing, handling bill of lading execution, export/import customs clearance, shipping document processing, and inland destination tracking.",
       },
     ],
   },
 };
 
-// =======================
-// CAREER PAGE CONTENT (UPDATED FULL DATA)
-// =======================
 export const careerContent = {
   hero: {
-    title: "Career",
-    subtitle: "Join our team and build innovative digital experiences with us.",
+    title: "Careers",
+    subtitle: "Join the Sultan Apparels team and advance the future of responsible global fashion.",
   },
   filters: {
     categories: [
-      "All Job Category",
-      "Mobile Development",
-      "Design",
-      "MERN",
-      "Full Stack",
-      "React Developer",
+      "All Departments",
+      "Sourcing & Procurement",
+      "Quality Control & Engineering",
+      "Logistics & Freight",
+      "Product Development & CAD",
+      "Compliance & CSR",
     ],
-    types: ["All Job Type", "Remote", "Hybrid", "On-site"],
+    types: ["All Employment Types", "Full-time", "Contract", "Remote"],
     locations: [
-      "All Job Location",
-      "London",
+      "All Locations",
+      "Milton Keynes, UK",
+      "Dhaka, Bangladesh",
       "Remote (UK)",
-      "Remote (Global)",
-      "Hybrid",
     ],
   },
 };
@@ -729,6 +706,6 @@ export const contactContent = {
   hero: {
     title: "Contact Us",
     subtitle:
-      "Have a project in mind or a question for our team? We'd love to hear from you. Reach out and let's build something amazing together.",
+      "Ready to stabilize and scale your production lines? Contact our client management team to schedule a technical consultation.",
   },
 };

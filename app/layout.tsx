@@ -19,7 +19,7 @@ const fontSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://gensourcing.co.uk"),
+  metadataBase: new URL("https://sultan-apparels.com"),
 
   title: {
     default: "Sultan Apparels | Procurement & Supply Chain Solutions",
@@ -31,12 +31,13 @@ export const metadata: Metadata = {
 
   keywords: [
     "Sultan Apparels",
-    "Sourcing Agency UK",
-    "Procurement Services",
+    "Sultan Apparels Ltd",
+    "Apparel Sourcing UK",
+    "Garment Procurement Agency",
     "Supply Chain Solutions",
-    "Supplier Network",
-    "Business Growth",
-    "Digital Sourcing Tools",
+    "Ethical Manufacturing",
+    "Supplier Network Bangladesh",
+    "UK Sourcing Company",
   ],
 
   authors: [{ name: "Sultan Apparels Team" }],
@@ -82,7 +83,7 @@ export const metadata: Metadata = {
     title: "Sultan Apparels | Procurement & Supply Chain Solutions",
     description:
       "Sultan Apparels helps businesses connect with verified suppliers and optimise sourcing and procurement processes for scalable growth.",
-    url: "https://gensourcing.co.uk",
+    url: "https://sultan-apparels.com",
     siteName: "Sultan Apparels",
     images: [
       {
@@ -105,7 +106,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://gensourcing.co.uk",
+    canonical: "https://sultan-apparels.com",
   },
 
   category: "business",

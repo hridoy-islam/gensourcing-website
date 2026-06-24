@@ -177,7 +177,7 @@ export function ServiceSplitSection(props: any) {
       ref={sectionRef}
       className={cn(
         "relative py-24 md:py-32 overflow-hidden transition-colors duration-700", 
-        isDark ? "bg-black" : "bg-white"
+        isDark ? "bg-secondary-foreground" : "bg-background"
       )}
     >
       {/* Background Ambient Glow */}

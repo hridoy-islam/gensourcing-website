@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Responsible Standards | Sultan Apparels",
     description:
       "Explore Sultan Apparels’s commitment to ethical and sustainable sourcing, responsible manufacturing, and supply chain transparency.",
-    url: "https://gensourcing.co.uk/responsible-standards",
+    url: "https://sultan-apparels.com/responsible-standards",
     siteName: "Sultan Apparels",
     images: [
       {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://gensourcing.co.uk/responsible-standards",
+    canonical: "https://sultan-apparels.com/responsible-standards",
   },
 
   category: "business",

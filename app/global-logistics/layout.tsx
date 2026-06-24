@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Global Logistics | Sultan Apparels",
     description:
       "Reliable international logistics and freight coordination services by Sultan Apparels. We manage global shipping, compliance, and supply chain operations with precision and transparency.",
-    url: "https://gensourcing.co.uk/global-logistics",
+    url: "https://sultan-apparels.com/global-logistics",
     siteName: "Sultan Apparels",
     images: [
       {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://gensourcing.co.uk/global-logistics",
+    canonical: "https://sultan-apparels.com/global-logistics",
   },
 
   category: "business",

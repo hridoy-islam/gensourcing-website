@@ -34,7 +34,10 @@ export function DeliveryProcess() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 md:py-32 bg-white overflow-hidden">
+    <section
+      ref={sectionRef}
+      className="py-24 md:py-32 bg-white overflow-hidden"
+    >
       <div className="container mx-auto ">
         {/* Header: Left Aligned for a more "Editorial" look */}
         <div className="mb-20 ">
@@ -51,39 +54,39 @@ export function DeliveryProcess() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`process-card group relative p-10 md:p-14 border-r border-b border-zinc-200 transition-colors duration-700 hover:bg-zinc-50 flex flex-col justify-between min-h-[350px] cursor-pointer ${
+              className={`process-card group relative  isolate p-10 md:p-14 border-r border-b border-zinc-200 transition-colors duration-700 hover:bg-zinc-50 flex flex-col justify-between min-h-[350px] cursor-pointer ${
                 index === 4 ? "lg:col-span-2" : "" // Makes the 5th item wider to balance the 3-column row
               }`}
             >
-              <div>
+              <div className="relative z-50">
                 <div className="flex justify-between items-center mb-12">
                   <span className="text-xs font-black tracking-[0.3em] text-zinc-300 group-hover:text-black transition-colors duration-500 uppercase">
                     Phase // 0{index + 1}
                   </span>
-                  <ArrowUpRight 
-                    size={24} 
-                    className="text-zinc-200 group-hover:text-black group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-500" 
+
+                  <ArrowUpRight
+                    size={24}
+                    className="text-zinc-200 group-hover:text-black group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-500"
                   />
                 </div>
 
                 <h3 className="text-3xl font-bold text-black mb-6 tracking-tight">
                   {feature.title}
                 </h3>
+
                 <p className="text-lg leading-relaxed max-w-sm group-hover:text-zinc-900 transition-colors duration-500">
                   {feature.description}
                 </p>
               </div>
 
-              {/* Subtle background number that doesn't compete with text */}
-              <div className="absolute bottom-6 right-10 pointer-events-none select-none">
+              {/* Background number */}
+              <div className="absolute bottom-6 right-1 pointer-events-none select-none z-0">
                 <span className="text-[12rem] font-bold text-zinc-100 leading-none transition-colors duration-700 group-hover:text-zinc-200">
                   {index + 1}
                 </span>
               </div>
             </div>
           ))}
-          
-          
         </div>
       </div>
     </section>

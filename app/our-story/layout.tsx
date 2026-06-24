@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Our Story | Sultan Apparels",
     description:
       "Learn how Sultan Apparels was founded and how we connect international buyers with trusted manufacturers through structured, ethical, and transparent sourcing solutions.",
-    url: "https://gensourcing.co.uk/our-story",
+    url: "https://sultan-apparels.com/our-story",
     siteName: "Sultan Apparels",
     images: [
       {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://gensourcing.co.uk/our-story",
+    canonical: "https://sultan-apparels.com/our-story",
   },
 };
 

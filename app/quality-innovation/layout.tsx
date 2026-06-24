@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Quality & Innovation | Sultan Apparels",
     description:
       "Discover how Sultan Apparels combines innovation, ethical manufacturing, and structured quality control to deliver reliable global sourcing solutions.",
-    url: "https://gensourcing.co.uk/quality-innovation",
+    url: "https://sultan-apparels.com/quality-innovation",
     siteName: "Sultan Apparels",
     images: [
       {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://gensourcing.co.uk/quality-innovation",
+    canonical: "https://sultan-apparels.com/quality-innovation",
   },
 
   category: "business",

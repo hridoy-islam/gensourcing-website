@@ -51,7 +51,7 @@ export const CompanyIntro = ({ data }: { data: CompanyIntroData }) => {
 
   return (
     <section ref={containerRef} className="w-full py-20 lg:py-32 bg-white text-black overflow-hidden">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           
           {/* Image Side - Minimalist & Sharp */}
@@ -67,7 +67,7 @@ export const CompanyIntro = ({ data }: { data: CompanyIntroData }) => {
 
           {/* Content Side */}
           <div className="intro-content flex flex-col justify-center space-y-8">
-            <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-black">
+            <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-primary">
               {data.title}
             </h2>
             
@@ -79,8 +79,9 @@ export const CompanyIntro = ({ data }: { data: CompanyIntroData }) => {
 
             <div className="pt-6">
               <Button
+                variant="default"
                 size="lg"
-                className="bg-black text-white hover:bg-neutral-800 rounded-none px-8 h-12 text-md"
+                className="rounded-none px-8 h-12 text-md"
               >
                 {data.buttonText}
                 <ArrowRight className="ml-2 h-4 w-4" />

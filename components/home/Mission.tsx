@@ -47,7 +47,7 @@ export function Mission() {
   }, []);
 
   return (
-    <section className="relative py-32 md:py-48 overflow-hidden bg-black">
+    <section className="relative py-32 md:py-48 overflow-hidden bg-secondary-foreground">
       {/* Background Image Container */}
       <div className="absolute inset-0 z-0">
         <div ref={bgRef} className="relative w-full h-[120%] -top-[10%]">
@@ -79,8 +79,8 @@ export function Mission() {
         <div className="flex justify-center">
           <Link href={buttonHref}>
             <Button 
-              variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-black px-12 py-8 text-sm md:text-base uppercase tracking-widest rounded-none transition-all duration-500 bg-transparent"
+              variant="default" 
+              className="px-12 py-8 text-sm md:text-base uppercase tracking-widest rounded-none transition-all duration-500"
             >
               {buttonText}
             </Button>

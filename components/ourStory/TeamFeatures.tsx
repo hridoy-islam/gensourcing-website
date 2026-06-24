@@ -56,7 +56,7 @@ export const TeamFeatures = ({ data }: { data: any }) => {
               <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl lg:text-6xl">
                 {data.title}
               </h2>
-              <div className="h-1 w-20 bg-black" />
+              <div className="h-1 w-20 bg-primary" />
             </div>
 
             {/* Image */}
@@ -81,7 +81,7 @@ export const TeamFeatures = ({ data }: { data: any }) => {
                   className="border border-neutral-200 bg-neutral-50 shadow-none rounded-none group hover:bg-black hover:text-white transition-all duration-500 ease-in-out"
                 >
                   <CardHeader className="space-y-4">
-                    <div className="w-12 h-12 flex items-center justify-center bg-black text-white group-hover:bg-white group-hover:text-black transition-colors duration-500">
+                    <div className="w-12 h-12 flex items-center justify-center bg-primary text-white group-hover:bg-white group-hover:text-black transition-colors duration-500">
                       <IconComponent className="w-6 h-6" />
                     </div>
                     <CardTitle className="text-2xl font-bold">

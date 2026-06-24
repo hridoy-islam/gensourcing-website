@@ -91,8 +91,9 @@ export default function PartnerSection() {
                   &quot;{partnership.closingText}&quot;
                 </p>
                 <Button
+                  variant="default"
                   size="lg"
-                  className="w-full sm:w-auto rounded-none h-14 px-10 text-md bg-black hover:bg-neutral-800 text-white transition-all duration-300 flex items-center justify-between group"
+                  className="w-full sm:w-auto rounded-none h-14 px-10 text-md transition-all duration-300 flex items-center justify-between group"
                   asChild
                 >
                   <a href={partnership.buttonHref}>

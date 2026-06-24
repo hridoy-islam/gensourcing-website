@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Partner Network | Sultan Apparels",
     description:
       "Connect with Sultan Apparels’s trusted network of global suppliers and manufacturers. Our structured partner network ensures reliable sourcing, quality, and transparency.",
-    url: "https://gensourcing.co.uk/partner-network",
+    url: "https://sultan-apparels.com/partner-network",
     siteName: "Sultan Apparels",
     images: [
       {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://gensourcing.co.uk/partner-network",
+    canonical: "https://sultan-apparels.com/partner-network",
   },
 
   category: "business",

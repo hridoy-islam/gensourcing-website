@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Market Insights | Sultan Apparels",
     description:
       "Explore expert insights on sourcing, procurement, global manufacturing, and supply chain developments from Sultan Apparels — your trusted UK sourcing partner.",
-    url: "https://gensourcing.co.uk/market-insights",
+    url: "https://sultan-apparels.com/market-insights",
     siteName: "Sultan Apparels",
     images: [
       {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://gensourcing.co.uk/market-insights",
+    canonical: "https://sultan-apparels.com/market-insights",
   },
 
   category: "business",

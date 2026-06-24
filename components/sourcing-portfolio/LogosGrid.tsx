@@ -30,22 +30,30 @@ export const LogosGrid = () => {
   ];
 
   return (
-    <div className="mt-16 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
-      {logos.map((src, index) => (
-        <div
-          key={index}
-          className="flex items-center justify-center transition duration-300"
-        >
-          <div className="relative w-[140px] h-[70px]">
-            <Image
-              src={src}
-              alt={`Logo ${index + 1}`}
-              fill
-              className="object-contain transition duration-300 hover:scale-105"
-            />
-          </div>
+    <div className="relative container mx-auto">
+      {/* Grid Container with Border */}
+      <div className="rounded-2xl border border-gray-200 bg-white/80 backdrop-blur-sm shadow-sm">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 divide-x divide-y divide-gray-100">
+          {logos.map((src, index) => (
+            <div
+              key={index}
+              className="group relative flex items-center justify-center p-8 transition-all duration-300 hover:bg-gray-50/50"
+            >
+              <div className="relative w-full h-16 max-w-[140px]">
+                <Image
+                  src={src}
+                  alt={`Partner logo ${index + 1}`}
+                  fill
+                  className="object-contain  transition-all duration-500 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110"
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                />
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
+      
+      
     </div>
   );
 };

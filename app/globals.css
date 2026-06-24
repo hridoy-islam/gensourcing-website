@@ -6,10 +6,10 @@
   :root {
     --background: 0 0% 100%;
     --primary: 32 86% 54%;
-    --foreground: 0 0% 0%;    
+    --foreground: 0 0% 0%;
     --secondary: 359 69% 14%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    
+    --secondary-foreground: 225 42% 32%;
+
     --primary-foreground: 210 40% 98%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -30,9 +30,9 @@
   .dark {
     --background: 0 0% 100%;
     --primary: 32 86% 54%;
-    --foreground: 222.2 84% 4.9%;    
+    --foreground: 222.2 84% 4.9%;
     --secondary: 359 69% 14%;
-    
+    --secondary-foreground: 225 42% 32%;
   }
 }
 

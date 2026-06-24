@@ -63,7 +63,7 @@ export const ContentBlock = ({ data, index }: ContentSectionProps) => {
       ref={containerRef}
       className={cn(
         "w-full py-24 lg:py-32 overflow-hidden",
-        isEven ? "bg-white text-black" : "bg-black text-white"
+        isEven ? "bg-background text-foreground" : "bg-secondary-foreground text-background"
       )}
     >
       <div className="container mx-auto">
@@ -81,7 +81,7 @@ export const ContentBlock = ({ data, index }: ContentSectionProps) => {
                 {data.title}
               </h2>
               {/* Decorative Line */}
-              <div className={cn("h-1 w-24", isEven ? "bg-black" : "bg-white")} />
+              <div className={cn("h-1 w-24", isEven ? "bg-primary" : "bg-background")} />
             </div>
             
             <div className={cn("prose max-w-none text-lg leading-relaxed font-light whitespace-pre-line", isEven ? "text-neutral-600" : "text-neutral-300")}>

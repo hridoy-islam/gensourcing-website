@@ -57,14 +57,14 @@ export function Highlights() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 bg-black text-white">
+    <section ref={sectionRef} className="py-24 bg-secondary-foreground text-background">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           <div>
             <h2 className="text-3xl md:text-5xl font-bold mb-6">{title}</h2>
-            <div className="h-[2px] w-12 bg-secondary" />
+            <div className="h-[2px] w-12 bg-primary" />
           </div>
-          <p className="text-lg text-secondary leading-relaxed self-center">
+          <p className="text-lg text-white/70 leading-relaxed self-center">
             {description}
           </p>
         </div>
@@ -73,12 +73,12 @@ export function Highlights() {
           {stats.map((stat, index) => (
             <div key={index} className="stat-card border-l pl-6">
               <span 
-                className="stat-number block text-4xl md:text-6xl font-black text-white mb-2"
+                className="stat-number block text-4xl md:text-6xl font-black text-background mb-2"
                 data-value={stat.value}
               >
                 0
               </span>
-              <span className="text-sm md:text-base text-secondary font-medium uppercase tracking-wider">
+              <span className="text-sm md:text-base text-white/70 font-medium uppercase tracking-wider">
                 {stat.label}
               </span>
             </div>

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Sourcing Portfolio | Sultan Apparels",
     description:
       "Discover Sultan Apparels’s portfolio of global sourcing projects, highlighting successful collaborations, quality management, and ethical procurement practices.",
-    url: "https://gensourcing.co.uk/sourcing-portfolio",
+    url: "https://sultan-apparels.com/sourcing-portfolio",
     siteName: "Sultan Apparels",
     images: [
       {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://gensourcing.co.uk/sourcing-portfolio",
+    canonical: "https://sultan-apparels.com/sourcing-portfolio",
   },
 
   category: "business",

@@ -109,7 +109,7 @@ export default function GlobalLogisticsPage() {
       <MouseFollower />
       <div
         ref={containerRef}
-        className="bg-white min-h-screen text-black selection:bg-black selection:text-white"
+        className="bg-white min-h-screen text-black selection:bg-primary selection:text-white"
       >
         {/* --- 1. Hero --- */}
         <Hero
@@ -121,7 +121,7 @@ export default function GlobalLogisticsPage() {
         <section className="intro-section py-20 lg:py-32 container mx-auto ">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-end">
             <div>
-              <div className="logistics-fade h-[2px] w-16 bg-black mb-8" />
+              <div className="logistics-fade h-[2px] w-16 bg-primary mb-8" />
               <h2 className="logistics-fade text-4xl lg:text-6xl font-bold tracking-tighter leading-[1.05] uppercase">
                 {logisticsContent.intro.heading}
               </h2>
@@ -139,7 +139,7 @@ export default function GlobalLogisticsPage() {
         </section>
 
         {/* --- 3. CINEMATIC IMAGE SECTION --- */}
-        <section className="image-section w-full h-[60vh] lg:h-[80vh] overflow-hidden relative bg-black">
+        <section className="image-section w-full h-[60vh] lg:h-[80vh] overflow-hidden relative">
 
          
           <div className="absolute inset-0 w-full h-[120%] -top-[10%] z-0">
@@ -151,12 +151,12 @@ export default function GlobalLogisticsPage() {
           </div>
 
           {/* Overlay Content */}
-          <div className="absolute inset-0 bg-black/20 z-10 pointer-events-none">
+          <div className="absolute inset-0 bg-secondary-foreground/20 z-10 pointer-events-none">
             <div className="absolute bottom-8 left-4 md:bottom-12 md:left-12 text-white">
               <p className="text-xs font-mono border border-white/30 inline-block px-2 py-1 mb-2 backdrop-blur-sm">
                 {logisticsContent.visual.overlayText}
               </p>
-              <h3 className="text-3xl md:text-5xl font-bold tracking-tighter">
+              <h3 className="text-3xl md:text-5xl font-bold tracking-tighter text-primary">
                 Seamless Extension of Sourcing
               </h3>
             </div>
@@ -191,7 +191,7 @@ export default function GlobalLogisticsPage() {
                   key={idx}
                   className="service-card bg-white p-10 lg:p-14 hover:bg-neutral-100 transition-colors duration-500 group"
                 >
-                  <div className="mb-6 w-12 h-12 bg-neutral-100 rounded-full flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-300">
+                  <div className="mb-6 w-12 h-12 bg-neutral-100 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-300">
                     <service.icon strokeWidth={1.5} size={24} />
                   </div>
                   <h4 className="text-2xl font-bold mb-4 tracking-tight">

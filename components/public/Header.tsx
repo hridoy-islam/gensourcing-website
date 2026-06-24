@@ -32,13 +32,13 @@ export function Header() {
   }, []);
 
   return (
-    <ScrollContext.Provider value={scrolled}>
-      <div className="fixed top-0 left-0 z-50 w-full">
+    <ScrollContext.Provider value={scrolled} >
+      <div className="fixed top-0 left-0 z-50 w-full bg-white">
         {/* ─── TOP HEADER BAR (desktop only) ─── */}
         <div
           className={cn(
-            "w-full bg-white max-md:hidden border-b border-black/10 overflow-hidden transition-all duration-300",
-            scrolled ? "max-h-0 opacity-0 border-b-0" : "max-h-40 opacity-100",
+            "w-full bg-white max-md:hidden border-b border-black/10 overflow-hidden transition-all duration-300 ",
+            scrolled ? "max-h-0 opacity-0 border-b-0" : "max-h-40 opacity-100 bg-white",
           )}
         >
           <div className="h-28 container flex items-center justify-between">
@@ -81,7 +81,7 @@ export function Header() {
 
         {/* ─── MAIN NAVIGATION ─── */}
         <div className="w-full border-b border-black/10 bg-white backdrop-blur-xl px-5">
-          <header className="w-full h-20 flex items-center justify-between">
+          <header className="w-full h-20 flex items-center justify-between bg-white">
 
             {/* Mobile Logo */}
             <div className="lg:hidden">
@@ -100,7 +100,7 @@ export function Header() {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-6 xl:gap-10 mx-auto">
+            <nav className="hidden lg:flex items-center gap-6 xl:gap-10 mx-auto bg-white">
               {siteConfig.navItems.map((item) => (
                 <div key={item.label} className="relative group">
                   {item.items ? (
@@ -114,7 +114,7 @@ export function Header() {
                   ) : (
                     <Link
                       href={item.href}
-                      className="font-bold uppercase tracking-[1.5px] text-black/80 hover:text-black text-[12px] transition-colors"
+                      className="font-bold uppercase tracking-[1.5px] text-black/80 hover:text-primary text-[12px] transition-colors"
                     >
                       {item.label}
                     </Link>

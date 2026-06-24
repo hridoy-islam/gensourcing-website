@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "Contact Sultan Apparels | Procurement & Supply Chain Experts",
     description:
       "Get in touch with Sultan Apparels for trusted global sourcing, supplier verification, and logistics coordination. Our team is ready to assist your business.",
-    url: "https://gensourcing.co.uk/get-in-touch",
+    url: "https://sultan-apparels.com/get-in-touch",
     siteName: "Sultan Apparels",
     images: [
       {
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://gensourcing.co.uk/get-in-touch",
+    canonical: "https://sultan-apparels.com/get-in-touch",
   },
 
   category: "business",

@@ -85,7 +85,7 @@ export function Portfolio() {
                 <div className="flex items-center gap-6 mb-8">
                 <button 
                     onClick={scrollPrev}
-                    className="w-14 h-14 rounded-full border border-zinc-300 flex items-center justify-center text-zinc-600 hover:bg-black hover:border-black hover:text-white transition-all duration-300 group"
+                    className="w-14 h-14 rounded-full border border-zinc-300 flex items-center justify-center text-zinc-600 hover:bg-primary hover:border-primary hover:text-white transition-all duration-300 group"
                     aria-label="Previous Slide"
                 >
                     <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
@@ -97,7 +97,7 @@ export function Portfolio() {
 
                 <button 
                     onClick={scrollNext}
-                    className="w-14 h-14 rounded-full border border-zinc-300 flex items-center justify-center text-zinc-600 hover:bg-black hover:border-black hover:text-white transition-all duration-300 group"
+                    className="w-14 h-14 rounded-full border border-zinc-300 flex items-center justify-center text-zinc-600 hover:bg-primary hover:border-primary hover:text-white transition-all duration-300 group"
                     aria-label="Next Slide"
                 >
                     <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />

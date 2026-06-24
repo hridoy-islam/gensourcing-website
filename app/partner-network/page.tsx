@@ -122,7 +122,7 @@ export default function PartnerNetworkPage() {
 
         {/* --- 2. Intro Statement --- */}
         <section className="intro-section py-20 lg:py-32 container mx-auto  border-b border-neutral-100">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="mx-auto text-center">
              <div className="intro-text inline-block mb-6 px-3 py-1 border border-black rounded-full">
                 <span className="text-xs font-bold uppercase tracking-widest">Sourcing Strategy</span>
              </div>
@@ -156,15 +156,15 @@ export default function PartnerNetworkPage() {
                 </div>
                 
                 {/* Visual Decorative Box */}
-                <div className="p-6 bg-white border border-neutral-200 shadow-sm mt-8">
+                <div className="p-6 bg-secondary-foreground border border-neutral-200 shadow-sm mt-8">
                    <div className="flex items-center gap-3 mb-2">
-                      <CheckCircle2 className="w-5 h-5 text-black" />
-                      <span className="font-bold text-sm uppercase">Status: Qualified</span>
+                      <CheckCircle2 className="w-5 h-5 text-white" />
+                      <span className="font-bold text-sm uppercase text-white">Status: Qualified</span>
                    </div>
                    <div className="h-1 w-full bg-neutral-100 rounded-full overflow-hidden">
-                      <div className="h-full w-full bg-black" />
+                      <div className="h-full w-full bg-white" />
                    </div>
-                   <p className="text-xs text-neutral-400 mt-2 font-mono">
+                   <p className="text-xs text-neutral-100 mt-2 font-mono">
                       100% COMPLIANCE RATE REQUIRED
                    </p>
                 </div>
@@ -183,7 +183,7 @@ export default function PartnerNetworkPage() {
                       
                       <div className="flex items-start md:items-center gap-6 py-8 md:py-10 px-4 md:px-8 hover:bg-white transition-colors duration-300">
                         {/* Icon Box */}
-                        <div className="audit-icon flex-shrink-0 w-12 h-12 flex items-center justify-center bg-black text-white rounded-none">
+                        <div className="audit-icon flex-shrink-0 w-12 h-12 flex items-center justify-center bg-secondary text-white rounded-none">
                           <item.icon strokeWidth={1.5} size={24} />
                         </div>
 

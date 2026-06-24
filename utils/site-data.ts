@@ -17,11 +17,11 @@ export const siteConfig = {
     "Connecting international buyers with reliable manufacturers across Asia and Africa. Ethical, transparent, and end-to-end apparel sourcing solutions.",
 
   address:
-    "100 Avebury Boulevard, Milton Keynes, MK9 1FH United Kingdom",
+    "9Town Quay Wharf, Abbey Road, Barking, IG11 7BZ",
 
-  email: "team@gensourcing.co.uk",
+  email: "info@sultan-apparels.co.uk",
 
-  phone: "+44 (0) 208 004 6475",
+  phone: "07424893820",
 
   // ==============================
   // Main Navigation
@@ -40,7 +40,7 @@ export const siteConfig = {
         { label: "Responsible Standards", href: "/responsible-standards" },
       ],
     },
-    { label: "Behind Gen", href: "/behind-gen" },
+        { label: "Behind Sultan Apparels", href: "/behind-sultan-apparels" },
     { label: "Sourcing Portfolio", href: "/sourcing-portfolio" },
     { label: "Partner With Us", href: "/partner-with-us" },
   ],
@@ -52,22 +52,22 @@ export const siteConfig = {
     {
       name: "LinkedIn",
       icon: Linkedin,
-      href: "https://www.linkedin.com/company/gen-sourcing-limited/",
+      href: "#",
     },
     {
       name: "X",
       icon: Twitter, // Twitter icon represents X
-      href: "https://x.com/gen_sourcing",
+      href: "#",
     },
     {
       name: "YouTube",
       icon: Youtube,
-      href: "https://www.youtube.com/@GenSourcingUk",
+      href: "#",
     },
     {
       name: "Pinterest",
       icon: FaPinterest,
-      href: "https://uk.pinterest.com/gensourcing_co_uk/",
+      href: "#",
     },
   ],
 
@@ -80,7 +80,7 @@ export const siteConfig = {
       items: [
         { label: "Home", href: "/" },
         { label: "Our Story", href: "/our-story" },
-        { label: "Behind Gen", href: "/behind-gen" },
+        { label: "Behind Sultan Apparels", href: "/behind-sultan-apparels" },
         { label: "Sourcing Portfolio", href: "/sourcing-portfolio" },
         { label: "Partner With Us", href: "/partner-with-us" },
       ],

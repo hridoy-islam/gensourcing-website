@@ -67,7 +67,7 @@ export const CtaStrategies = ({ data }: { data: CtaStrategiesData }) => {
   );
 
   return (
-    <section ref={containerRef} className="w-full py-20 lg:py-32 bg-black text-white overflow-hidden">
+    <section ref={containerRef} className="w-full py-20 lg:py-32 bg-secondary-foreground text-background overflow-hidden">
       <div className="container px-4 md:px-6 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           
@@ -76,7 +76,7 @@ export const CtaStrategies = ({ data }: { data: CtaStrategiesData }) => {
             <div className="strategy-header space-y-6">
               <Badge
                 variant="outline"
-                className="text-white border-white/40 px-4 py-2 uppercase tracking-[0.2em] text-xs rounded-full"
+                className="text-background border-background/40 px-4 py-2 uppercase tracking-[0.2em] text-xs rounded-full"
               >
                 {data.pretitle}
               </Badge>
@@ -89,7 +89,7 @@ export const CtaStrategies = ({ data }: { data: CtaStrategiesData }) => {
               {data.items.map((item, idx) => (
                 <div
                   key={idx}
-                  className="strategy-item group flex flex-col gap-3 border-l-2 border-neutral-800 hover:border-white pl-6 transition-colors duration-500"
+                  className="strategy-item group flex flex-col gap-3 border-l-2 border-primary hover:border-background pl-6 transition-colors duration-500"
                 >
                   <h3 className="font-semibold text-2xl text-white group-hover:translate-x-1 transition-transform duration-300">
                     {item.heading}
@@ -102,8 +102,9 @@ export const CtaStrategies = ({ data }: { data: CtaStrategiesData }) => {
             </div>
 
             <Button
+              variant="default"
               size="lg"
-              className="mt-6 bg-white text-black hover:bg-neutral-200 rounded-none px-10 h-14 text-md font-medium group"
+              className="mt-6 rounded-none px-10 h-14 text-md font-medium"
               asChild
             >
               <a href={data.buttonHref}>
@@ -114,7 +115,7 @@ export const CtaStrategies = ({ data }: { data: CtaStrategiesData }) => {
 
           {/* Image Side - RESTORED */}
           <div className="strategy-image-container order-1 lg:order-2 relative group">
-            <div className="relative h-[500px] lg:h-[650px] w-full overflow-hidden border border-white/10">
+            <div className="relative h-[500px] lg:h-[650px] w-full overflow-hidden border border-background/10">
               <img
                 ref={imageRef}
                 src={data.image}
@@ -126,7 +127,7 @@ export const CtaStrategies = ({ data }: { data: CtaStrategiesData }) => {
             </div>
             
             {/* Decorative white frame that shifts on hover */}
-            <div className="absolute -top-4 -right-4 w-full h-full border border-white/20 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500" />
+            <div className="absolute -top-4 -right-4 w-full h-full border border-background/20 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500" />
           </div>
 
         </div>
