@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/utils/site-data";
-import { MapPin, Mail } from "lucide-react";
+import { MapPin, Mail, Phone } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -60,7 +60,7 @@ export function Footer() {
                       className="group flex items-center gap-3 text-black hover:text-primary transition-colors duration-300"
                     >
                       {/* The Animated Dot */}
-                      <span className="h-1.5 w-1.5 rounded-full bg-neutral-400 transition-all duration-300 group-hover:bg-primary group-hover:scale-125" />
+                      <span className="h-1.5 w-1.5 rounded-full bg-neutral-700 transition-all duration-300 group-hover:bg-primary group-hover:scale-125" />
                       
                       <span className="text-sm font-medium transition-transform duration-300 group-hover:translate-x-1">
                         {item.label}
@@ -83,7 +83,7 @@ export function Footer() {
                    <MapPin size={18} className="text-black group-hover:text-white transition-colors" />
                 </div>
                 <div>
-                   <p className="text-neutral-400 Richmond font-bold mb-1 uppercase tracking-widest text-[10px]">Headquarters</p>
+                   <p className="text-neutral-700 Richmond font-bold mb-1 uppercase tracking-widest text-[10px]">Headquarters</p>
                    <span className="text-sm text-black font-light leading-relaxed block max-w-[200px]">
                      {siteConfig.address}
                    </span>
@@ -95,9 +95,20 @@ export function Footer() {
                    <Mail size={18} className="text-black group-hover:text-white transition-colors" />
                 </div>
                 <div>
-                   <p className="text-neutral-400 font-bold mb-1 uppercase tracking-widest text-[10px]">Inquiries</p>
+                   <p className="text-neutral-700 font-bold mb-1 uppercase tracking-widest text-[10px]">Email</p>
                    <span className="text-sm text-black font-light block">
                      {siteConfig.email}
+                   </span>
+                </div>
+              </li>
+              <li className="flex gap-4 group">
+                <div className="mt-1 w-10 h-10 shrink-0 bg-neutral-100 flex items-center justify-center rounded-lg group-hover:bg-primary transition-all duration-300">
+                   <Phone size={18} className="text-black group-hover:text-white transition-colors" />
+                </div>
+                <div>
+                   <p className="text-neutral-700 font-bold mb-1 uppercase tracking-widest text-[10px]">Phone</p>
+                   <span className="text-sm text-black font-light block">
+                     {siteConfig.phone}
                    </span>
                 </div>
               </li>
@@ -107,7 +118,7 @@ export function Footer() {
 
         {/* --- Copyright Bar --- */}
         <div className="mt-20 pt-8 border-t border-neutral-200 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
-          <p className="text-xs font-mono text-neutral-400 uppercase tracking-wider">
+          <p className="text-xs font-mono text-neutral-700 uppercase tracking-wider">
             &copy; {currentYear} Sultan Apparels. All Rights Reserved.
           </p>
           <p className="text-[10px] text-neutral-500 font-mono">

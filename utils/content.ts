@@ -109,6 +109,7 @@ export const homeContent = {
       addressTitle: "Headquarters",
       address: "9Town Quay Wharf, Abbey Road, Barking, IG11 7BZ",
       email: "info@sultan-apparels.co.uk",
+      phone: "07424893820",
     },
   },
 };

@@ -5,7 +5,7 @@ import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { contactFormSchema, type ContactFormValues } from "@/schemas";
 import { homeContent } from "@/utils/content";
-import { Mail, MapPin, Phone, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Mail, MapPin, Phone, ArrowRight, CheckCircle2, PhoneCall } from "lucide-react";
 import { cn } from "@/utils/utils";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -123,7 +123,7 @@ export function ContactSection() {
  return (
   <section
     ref={sectionRef}
-    className="relative py-28 lg:py-36 bg-gradient-to-b from-white to-slate-50 overflow-hidden"
+    className="relative py-28  -mt-32  bg-gradient-to-b from-white to-slate-50 overflow-hidden"
   >
     <div className="container relative z-10">
       <div className="grid lg:grid-cols-2 gap-20 lg:gap-28 items-start">
@@ -156,6 +156,12 @@ export function ContactSection() {
               title="Email"
               content={info.email}
               href={`mailto:${info.email}`}
+            />
+            <ContactItem
+              icon={PhoneCall}
+              title="Phone"
+              content={info.phone}
+              href={`mailto:${info.phone}`}
             />
           </div>
         </div>
