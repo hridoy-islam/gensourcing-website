@@ -14,7 +14,7 @@ const contentSections = [
   ];
   return (
     <SmoothScroll>
-      <MouseFollower />
+      {/* <MouseFollower /> */}
       <Hero title={title} subtitle={subtitle} />
       {contentSections.map((section, index) => (
         <ContentBlock 

@@ -11,7 +11,7 @@ import { ContactSection } from "@/components/shared/contact-section";
 export default function GetInTouchPage() {
   return (
     <SmoothScroll>
-      <MouseFollower />
+      {/* <MouseFollower /> */}
 
       <div className="bg-white min-h-screen text-black selection:bg-black selection:text-white">
         {/* --- HERO --- */}

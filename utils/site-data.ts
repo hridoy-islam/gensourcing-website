@@ -19,7 +19,7 @@ export const siteConfig = {
   address:
     "9Town Quay Wharf, Abbey Road, Barking, IG11 7BZ",
 
-  email: "info@sultan-apparels.co.uk",
+  email: "info@sultan-apparels.com",
 
   phone: "07424893820",
 

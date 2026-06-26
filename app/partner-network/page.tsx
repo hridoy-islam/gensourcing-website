@@ -111,7 +111,7 @@ export default function PartnerNetworkPage() {
 
   return (
     <SmoothScroll>
-      <MouseFollower />
+      {/* <MouseFollower /> */}
       <div ref={containerRef} className="bg-white min-h-screen text-black selection:bg-black selection:text-white">
         
         {/* --- 1. Hero --- */}

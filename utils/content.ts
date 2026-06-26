@@ -108,7 +108,7 @@ export const homeContent = {
         "Ready to scale your production? Partner with us to experience streamlined supply chain management. Contact our team today to schedule a formal consultation.",
       addressTitle: "Headquarters",
       address: "9Town Quay Wharf, Abbey Road, Barking, IG11 7BZ",
-      email: "info@sultan-apparels.co.uk",
+      email: "info@sultan-apparels.com",
       phone: "07424893820",
     },
   },
@@ -200,9 +200,9 @@ export const partnerWithUsContent = {
     closingText:
       "If your facility operates at these standards and you are focused on diversifying your global client portfolio, we invite you to begin the vendor application process with us.",
 
-    contactEmail: "info@sultan-apparels.co.uk",
+    contactEmail: "info@sultan-apparels.com",
     buttonText: "Submit Vendor Profile",
-    buttonHref: "mailto:info@sultan-apparels.co.uk",
+    buttonHref: "mailto:info@sultan-apparels.com",
 
     image: "/partner.jpg",
   },

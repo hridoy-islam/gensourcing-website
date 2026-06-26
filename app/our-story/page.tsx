@@ -11,7 +11,7 @@ export default function StoryPage() {
 
   return (
     <SmoothScroll>
-      <MouseFollower />
+      {/* <MouseFollower /> */}
       <Hero title={title} subtitle={subtitle} />
       <CompanyIntro data={ourStoryContent.companyIntro} />
 

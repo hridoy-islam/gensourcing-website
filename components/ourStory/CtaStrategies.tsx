@@ -120,7 +120,7 @@ export const CtaStrategies = ({ data }: { data: CtaStrategiesData }) => {
                 ref={imageRef}
                 src={data.image}
                 alt="Global Sourcing"
-                className="object-cover w-full h-[110%] grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100"
+                className="object-cover w-full h-[110%]  transition-all duration-1000 scale-110 group-hover:scale-100"
               />
               {/* Modern Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60" />

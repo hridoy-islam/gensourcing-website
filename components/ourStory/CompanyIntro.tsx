@@ -59,7 +59,7 @@ export const CompanyIntro = ({ data }: { data: CompanyIntroData }) => {
             <img
               src={data.image}
               alt={data.title}
-              className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-1000 ease-in-out"
+              className="object-cover w-full h-full  transition-all duration-1000 ease-in-out"
             />
             {/* Decorative Border Box */}
             <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-black z-[-1]" />

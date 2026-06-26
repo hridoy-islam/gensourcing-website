@@ -10,7 +10,7 @@ export default function SourcingPortfolio() {
 
   return (
     <SmoothScroll>
-      <MouseFollower />
+      {/* <MouseFollower /> */}
       <Hero title={title} subtitle={subtitle} />
       <SourcingIntro />
       <PortfolioGallery/>

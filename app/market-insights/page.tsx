@@ -101,7 +101,7 @@ export default function MarketInsightsPage() {
 
   return (
     <SmoothScroll>
-      <MouseFollower />
+      {/* <MouseFollower /> */}
       <div ref={containerRef} className="bg-white min-h-screen">
         
         {/* --- 1. Hero Section --- */}

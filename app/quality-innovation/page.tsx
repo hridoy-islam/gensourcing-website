@@ -35,7 +35,7 @@ Materials are tested in accredited labs, while engineers review functionality an
 export default function QualityInnovationPage() {
   return (
     <SmoothScroll>
-      <MouseFollower />
+      {/* <MouseFollower /> */}
       <div className="bg-white min-h-screen">
         
         {/* --- Hero Section --- */}

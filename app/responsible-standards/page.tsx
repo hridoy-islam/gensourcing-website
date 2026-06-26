@@ -43,7 +43,7 @@ Open communication and digital reporting tools provide accountability at each st
 export default function ResponsibilityPage() {
   return (
     <SmoothScroll>
-      <MouseFollower />
+      {/* <MouseFollower /> */}
       <div className="bg-white min-h-screen">
         
         {/* --- Hero Section --- */}

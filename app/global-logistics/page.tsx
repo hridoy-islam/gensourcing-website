@@ -106,7 +106,7 @@ export default function GlobalLogisticsPage() {
 
   return (
     <SmoothScroll>
-      <MouseFollower />
+      {/* <MouseFollower /> */}
       <div
         ref={containerRef}
         className="bg-white min-h-screen text-black selection:bg-primary selection:text-white"

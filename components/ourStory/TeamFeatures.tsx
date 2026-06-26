@@ -65,7 +65,7 @@ export const TeamFeatures = ({ data }: { data: any }) => {
                 ref={imageRef}
                 src={data.image || "/api/placeholder/800/1000"}
                 alt="Our Vision"
-                className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-1000 will-change-transform"
+                className="object-cover w-full h-full  transition-all duration-1000 will-change-transform"
               />
             </div>
           </div>

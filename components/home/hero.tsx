@@ -13,23 +13,23 @@ import useEmblaCarousel from "embla-carousel-react";
 // Unsplash image data
 const heroImages = [
   {
-    src: "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070&auto=format&fit=crop",
+    src: "hero1.avif",
     alt: "Modern fashion manufacturing facility"
   },
   {
-    src: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070&auto=format&fit=crop",
+    src: "hero2.avif",
     alt: "Fashion retail and apparel display"
   },
   {
-    src: "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=2070&auto=format&fit=crop",
+    src: "hero3.avif",
     alt: "Clothing manufacturing and textile"
   },
   {
-    src: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=2070&auto=format&fit=crop",
+    src: "hero4.avif",
     alt: "Garment factory production line"
   },
   {
-    src: "https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=2071&auto=format&fit=crop",
+    src: "hero5.avif",
     alt: "Fashion design and tailoring"
   }
 ];

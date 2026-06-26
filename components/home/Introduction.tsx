@@ -19,7 +19,7 @@ export function Introduction() {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   // Unsplash image for apparel/office setting
-  const imageSrc = "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=2070&auto=format&fit=crop";
+  const imageSrc = "/hero4.avif";
 
   useEffect(() => {
     const ctx = gsap.context(() => {

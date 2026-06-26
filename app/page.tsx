@@ -12,7 +12,7 @@ import { Portfolio } from "@/components/home/Portfolio";
 export default function Home() {
   return (
     <SmoothScroll>
-      <MouseFollower />
+      {/* <MouseFollower /> */}
       <main className="flex flex-col min-h-screen">
         <Hero />
         
