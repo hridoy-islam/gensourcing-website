@@ -37,8 +37,7 @@ export async function POST(req: Request) {
 
     const mailOptions = {
       from: `"Sultan Apparels" <info@sultan-apparels.com>`, 
-      // to: "info@sultan-apparels.com",
-      to: "mahitasnimul2@gmail.com",
+      to: "info@sultan-apparels.com",
       subject: `New Contact Form Submission from ${name}`,
       html,
     };
