@@ -13,8 +13,8 @@ export async function POST(req: Request) {
       port: 587,
       secure: false,
       auth: {
-        user: "contact@cyberpeers.co.uk",
-        pass: "4FROdCo?!)tT", // Tip: Move this to process.env.SMTP_PASSWORD later!
+        user: "info@sultan-apparels.com",
+        pass: "Zayan@2020",
       },
       tls: {
         rejectUnauthorized: false,
@@ -36,8 +36,9 @@ export async function POST(req: Request) {
     });
 
     const mailOptions = {
-      from: `"Cyberpeers" <contact@cyberpeers.co.uk>`, 
-      to: "contact@cyberpeers.co.uk",
+      from: `"Sultan Apparels" <info@sultan-apparels.com>`, 
+      // to: "info@sultan-apparels.com",
+      to: "mahitasnimul2@gmail.com",
       subject: `New Contact Form Submission from ${name}`,
       html,
     };

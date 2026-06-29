@@ -5,7 +5,7 @@ import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { contactFormSchema, type ContactFormValues } from "@/schemas";
 import { homeContent } from "@/utils/content";
-import { Mail, MapPin, Phone, ArrowRight, CheckCircle2, PhoneCall } from "lucide-react";
+import { Mail, MapPin, ArrowRight, CheckCircle2, PhoneCall } from "lucide-react";
 import { cn } from "@/utils/utils";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -72,7 +72,7 @@ export function ContactSection() {
         reset(); // Reset form fields
 
         // Hide success message after 3 seconds
-        setTimeout(() => setIsSubmitted(false), 3000);
+        setTimeout(() => setIsSubmitted(false), 10000);
       } else {
         console.error("Failed to send message");
       }
@@ -161,7 +161,7 @@ export function ContactSection() {
               icon={PhoneCall}
               title="Phone"
               content={info.phone}
-              href={`mailto:${info.phone}`}
+              href={`tel:${info.phone}`}
             />
           </div>
         </div>
@@ -171,9 +171,8 @@ export function ContactSection() {
           ref={formRef}
           className="relative bg-white/80 backdrop-blur-xl p-10 md:p-14 rounded-[2rem] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.12)] border border-white/40"
         >
-          {/* Success Overlay */}
-          {isSubmitted && (
-            <div className="absolute inset-0 z-10 bg-white/95 backdrop-blur-md rounded-[2rem] flex flex-col items-center justify-center text-center p-8 animate-in fade-in duration-300">
+          {isSubmitted ? (
+            <div className="flex flex-col items-center justify-center text-center py-12 animate-in fade-in duration-300">
               <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-5">
                 <CheckCircle2 size={30} />
               </div>
@@ -184,99 +183,100 @@ export function ContactSection() {
                 Our team will contact you shortly.
               </p>
             </div>
+          ) : (
+            <>
+              <div className="mb-10">
+                <h3 className="font-bold text-2xl text-slate-900 mb-3">
+                  {formTitle}
+                </h3>
+                <p className="text-slate-500 text-sm">
+                  Fill out the form and we’ll respond within 24 hours.
+                </p>
+              </div>
+
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+
+                <div className="grid sm:grid-cols-2 gap-6">
+                  <FormInput
+                    register={register("name")}
+                    placeholder={form.placeholders.name}
+                    error={errors.name?.message}
+                  />
+                  <FormInput
+                    register={register("email")}
+                    placeholder={form.placeholders.email}
+                    error={errors.email?.message}
+                  />
+                </div>
+
+                <FormInput
+                  register={register("phone")}
+                  placeholder={form.placeholders.phone}
+                  error={errors.phone?.message}
+                />
+
+                <div className="space-y-2">
+                  <Controller
+                    control={control}
+                    name="service"
+                    render={({ field }) => (
+                      <Select
+                        onValueChange={field.onChange}
+                        value={field.value || ""}
+                      >
+                        <SelectTrigger className="h-12 rounded-xl bg-slate-100 border-none focus:ring-2 focus:ring-primary/30">
+                          <SelectValue placeholder="Select a service..." />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {form.services.map((s) => (
+                            <SelectItem key={s} value={s}>
+                              {s}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    )}
+                  />
+                  {errors.service && (
+                    <p className="text-red-500 text-xs">
+                      {errors.service.message}
+                    </p>
+                  )}
+                </div>
+
+                <div className="space-y-2">
+                  <Textarea
+                    {...register("message")}
+                    placeholder={form.placeholders.message}
+                    className="rounded-xl bg-slate-100 border-none focus:ring-2 focus:ring-primary/30 min-h-[140px]"
+                  />
+                  {errors.message && (
+                    <p className="text-red-500 text-xs">
+                      {errors.message.message}
+                    </p>
+                  )}
+                </div>
+
+                <Button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full h-14 rounded-xl bg-primary text-white font-semibold hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl"
+                >
+                  {isSubmitting ? (
+                    <span className="flex items-center gap-2">
+                      <span className="h-4 w-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                      Sending...
+                    </span>
+                  ) : (
+                    <span className="flex items-center gap-2">
+                      {form.buttonText || "Send Message"}
+                      <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                    </span>
+                  )}
+                </Button>
+              </form>
+            </>
           )}
-
-          <div className="mb-10">
-            <h3 className="font-bold text-2xl text-slate-900 mb-3">
-              {formTitle}
-            </h3>
-            <p className="text-slate-500 text-sm">
-              Fill out the form and we’ll respond within 24 hours.
-            </p>
-          </div>
-
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-
-            <div className="grid sm:grid-cols-2 gap-6">
-              <FormInput
-                register={register("name")}
-                placeholder={form.placeholders.name}
-                error={errors.name?.message}
-              />
-              <FormInput
-                register={register("email")}
-                placeholder={form.placeholders.email}
-                error={errors.email?.message}
-              />
-            </div>
-
-            <FormInput
-              register={register("phone")}
-              placeholder={form.placeholders.phone}
-              error={errors.phone?.message}
-            />
-
-            {/* Select */}
-            <div className="space-y-2">
-              <Controller
-                control={control}
-                name="service"
-                render={({ field }) => (
-                  <Select
-                    onValueChange={field.onChange}
-                    value={field.value || ""}
-                  >
-                    <SelectTrigger className="h-12 rounded-xl bg-slate-100 border-none focus:ring-2 focus:ring-primary/30">
-                      <SelectValue placeholder="Select a service..." />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {form.services.map((s) => (
-                        <SelectItem key={s} value={s}>
-                          {s}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                )}
-              />
-              {errors.service && (
-                <p className="text-red-500 text-xs">
-                  {errors.service.message}
-                </p>
-              )}
-            </div>
-
-            <div className="space-y-2">
-              <Textarea
-                {...register("message")}
-                placeholder={form.placeholders.message}
-                className="rounded-xl bg-slate-100 border-none focus:ring-2 focus:ring-primary/30 min-h-[140px]"
-              />
-              {errors.message && (
-                <p className="text-red-500 text-xs">
-                  {errors.message.message}
-                </p>
-              )}
-            </div>
-
-            <Button
-              type="submit"
-              disabled={isSubmitting}
-              className="w-full h-14 rounded-xl bg-primary text-white font-semibold hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl"
-            >
-              {isSubmitting ? (
-                <span className="flex items-center gap-2">
-                  <span className="h-4 w-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                  Sending...
-                </span>
-              ) : (
-                <span className="flex items-center gap-2">
-                  {form.buttonText || "Send Message"}
-                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                </span>
-              )}
-            </Button>
-          </form>
         </div>
       </div>
     </div>

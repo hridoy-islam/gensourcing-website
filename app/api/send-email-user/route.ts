@@ -12,9 +12,9 @@ export async function POST(req: Request) {
       host: "smtp.ionos.co.uk",
       port: 587,
       secure: false, 
-      auth: {
-        user: "contact@cyberpeers.co.uk",
-        pass: "4FROdCo?!)tT", 
+     auth: {
+        user: "info@sultan-apparels.com",
+        pass: "Zayan@2020",
       },
       tls: {
         rejectUnauthorized: false,
@@ -33,9 +33,9 @@ export async function POST(req: Request) {
     });
 
     const mailOptions = {
-      from: `"Cyberpeers" <contact@cyberpeers.co.uk>`, 
+      from: `"Sultan Apparels" <info@sultan-apparels.com>`, 
       to: email,
-      subject: `Thank You for Contacting Cyberpeers`,
+      subject: `Thank You for Contacting Sultan Apparels`,
       html,
     };
 
